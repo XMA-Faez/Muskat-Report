@@ -12,8 +12,6 @@ import {
   Tooltip,
   ResponsiveContainer,
   Legend,
-  LineChart,
-  Line,
 } from "recharts";
 
 const MuskatPresentation = () => {
