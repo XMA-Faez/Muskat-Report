@@ -1,0 +1,501 @@
+"Day","Product title","Product variant title","Net sales","Day (previous_period)","Net sales (previous_period)"
+"2025-02-14","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Musk blanco",194.61,"2024-11-17",0
+"2025-05-07","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Musk blanco",169.68,"2025-02-07",0
+"2025-03-29","MUSK ÍNTIMO | MUSKAT©","2 comprados = 1 gratis / Algodón de azúcar,Algodón de azúcar,Algodón de azúcar",159.6,"2024-12-30",39.9
+"2025-03-17","Pack de 6 meses de frescura : 5 musks + 5 desodorante + 5 brumas","Algodón de azúcar / Algodón de azúcar / Musk blanco",149.9,"2024-12-18",0
+"2025-04-13","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",149.7,"2025-01-14",44.91
+"2025-05-06","MUSK ÍNTIMO - ALMIZCLE BLANCO","Default Title",140.32,"2025-02-06",0
+"2025-03-01","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",135.32,"2024-12-02",89.55
+"2025-04-20","MUSK ÍNTIMO - ALMIZCLE BLANCO","Default Title",135.32,"2025-01-21",59.7
+"2025-04-20","1 desodorante comprado = 1 almizcle al 50% de descuento","2 desodorantes comprados = 2 musk gratis / Algodón de azúcar,Algodón de azúcar",119.8,"2025-01-21",0
+"2025-03-05","Pack de rutina de frescura completa : 1 musk + 1 bruma + 1 desodorante","Musk blanco / Musk blanco / Musk blanco",119.7,"2024-12-06",79.8
+"2025-02-19","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",115.42,"2024-11-22",0
+"2025-03-13","MUSK ÍNTIMO - ALMIZCLE BLANCO","Default Title",111.44,"2024-12-14",19.9
+"2025-02-20","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",109.45,"2024-11-23",17.91
+"2025-05-05","MUSK ÍNTIMO | MUSKAT©","2 comprados = 1 gratis / Algodón de azúcar,Algodón de azúcar,Algodón de azúcar",101.75,"2025-02-05",0
+"2025-03-07","Pack de dulces : 1 bruma de algodón de azúcar + 1 musk de algodón de azúcar","Default Title",101.21,"2024-12-08",69.8
+"2025-03-22","Pack regalo : 3 brumas + 3 musks + 3 desodorantes","Musk blanco / Musk blanco / Musk blanco",99.9,"2024-12-23",0
+"2025-05-05","Pack Ultimate: 3 musk + 2 desodorantes + 2 brumas","Cereza / Algodón de azúcar / Musk Blanco",99.9,"2025-02-05",0
+"2025-03-01","2 musks comprados = 3 musks gratis","Musk blanco / Algodón de azúcar / Cereza",99.8,"2024-12-02",0
+"2025-03-26","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",99.8,"2024-12-27",0
+"2025-05-05","2 musks comprados = 3 musks gratis","Algodón de azúcar / Algodón de azúcar / Algodón de azúcar",99.8,"2025-02-05",0
+"2025-02-13","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",99.5,"2024-11-16",0
+"2025-02-21","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",99.5,"2024-11-24",55.72
+"2025-03-31","MUSK ÍNTIMO - ALMIZCLE BLANCO","Default Title",99.5,"2025-01-01",19.9
+"2025-04-29","MUSK ÍNTIMO - ALMIZCLE BLANCO","Default Title",99.5,"2025-01-30",35.82
+"2025-05-02","MUSK ÍNTIMO - ALMIZCLE BLANCO","Default Title",99.5,"2025-02-02",0
+"2025-02-21","Pack de dulces : 1 bruma de algodón de azúcar + 1 musk de algodón de azúcar","Default Title",97.72,"2024-11-24",0
+"2025-02-14","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",97.51,"2024-11-17",0
+"2025-02-18","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Monoi / Musk blanco",94.81,"2024-11-21",0
+"2025-02-27","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",94.81,"2024-11-30",94.81
+"2025-03-05","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Algodón de azúcar",94.81,"2024-12-06",0
+"2025-03-06","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",94.81,"2024-12-07",0
+"2025-03-12","2 musks comprados = 3 musks gratis","Algodón de azúcar / Cereza / Musk blanco",94.81,"2024-12-13",49.9
+"2025-04-02","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Musk blanco",94.81,"2025-01-03",0
+"2025-04-06","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Coco rojo",94.81,"2025-01-07",0
+"2025-04-25","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Algodón de azúcar / Algodón de azúcar",94.81,"2025-01-26",0
+"2025-05-06","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",94.81,"2025-02-06",49.9
+"2025-02-11","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",94.52,"2024-11-14",49.8
+"2025-02-27","MUSK ÍNTIMO - ALMIZCLE BLANCO","Default Title",91.54,"2024-11-30",35.82
+"2025-04-30","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",91.54,"2025-01-31",39.8
+"2025-02-13","Pack fragancia : 5 brumas + 2 musks + 2 desodorantes","Musk blanco / Musk blanco / Musk blanco",89.9,"2024-11-16",0
+"2025-03-05","Pack fragancia : 5 brumas + 2 musks + 2 desodorantes","Algodón de azúcar / Pinky / Musk blanco",89.9,"2024-12-06",0
+"2025-04-22","Pack fragancia : 5 brumas + 2 musks + 2 desodorantes","Musk blanco / Musk blanco / Cereza",89.9,"2025-01-23",0
+"2025-04-26","Pack fragancia : 5 brumas + 2 musks + 2 desodorantes","Musk blanco / Musk blanco / Musk blanco",89.9,"2025-01-27",0
+"2025-02-15","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Algodón de azúcar / Vainilla caramelo",89.82,"2024-11-18",0
+"2025-02-16","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Monoi / Musk blanco",89.82,"2024-11-19",0
+"2025-03-03","2 musks comprados = 3 musks gratis","Musk blanco / Algodón de azúcar / Musk blanco",89.82,"2024-12-04",0
+"2025-03-28","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Vainilla caramelo",89.82,"2024-12-29",0
+"2025-04-25","2 musks comprados = 3 musks gratis","Musk blanco / Monoï / Algodón de azúcar",89.82,"2025-01-26",0
+"2025-05-07","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",89.82,"2025-02-07",0
+"2025-02-15","MUSK ÍNTIMO | MUSKAT©","1 comprado = el segundo al 50% de descuento / Algodón de azúcar,Algodón de azúcar",89.7,"2024-11-18",0
+"2025-03-28","MUSK ÍNTIMO | MUSKAT©","1 comprado = el segundo al 50% de descuento / Algodón de azúcar,Cereza",89.7,"2024-12-29",23.92
+"2025-04-19","MUSK ÍNTIMO | MUSKAT©","1 comprado = el segundo al 50% de descuento / Algodón de azúcar,Musk Blanco",89.7,"2025-01-20",0
+"2025-03-15","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Algodón de azúcar / Musk blanco",87.32,"2024-12-16",0
+"2025-05-06","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Musk blanco",84.84,"2025-02-06",0
+"2025-03-07","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",84.83,"2024-12-08",39.92
+"2025-03-27","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Musk Blanco / Musk blanco",84.83,"2024-12-28",0
+"2025-03-13","Pack fragancia : 5 brumas + 2 musks + 2 desodorantes","Coco rojo / Vainilla caramelo / Cereza",80.91,"2024-12-14",0
+"2025-04-22","Pack fragancia : 5 brumas + 2 musks + 2 desodorantes","Musk blanco / Musk blanco / Musk blanco",80.91,"2025-01-23",0
+"2025-05-05","MUSK ÍNTIMO | MUSKAT©","1 comprado = el segundo al 50% de descuento / Musk Blanco,Musk Blanco",80.74,"2025-02-05",0
+"2025-03-06","2 musks comprados = 3 musks gratis","Cereza / Cereza / Monoï",79.84,"2024-12-07",0
+"2025-03-22","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Algodón de azúcar",79.84,"2024-12-23",0
+"2025-02-13","MUSK ÍNTIMO | MUSKAT©","2 comprados = 1 gratis / Algodón de azúcar,Algodón de azúcar,Monoi",79.8,"2024-11-16",0
+"2025-02-24","MUSK ÍNTIMO | MUSKAT©","2 comprados = 1 gratis / Algodón de azúcar,Algodón de azúcar,Algodón de azúcar",79.8,"2024-11-27",71.82
+"2025-03-03","Pack de rutina de frescura completa : 1 musk + 1 bruma + 1 desodorante","Musk blanco / Musk blanco / Musk blanco",79.8,"2024-12-04",0
+"2025-03-29","Pack de rutina de frescura completa : 1 musk + 1 bruma + 1 desodorante","Musk blanco / Musk blanco / Musk blanco",79.8,"2024-12-30",0
+"2025-04-08","MUSK ÍNTIMO | MUSKAT©","2 comprados = 1 gratis / Algodón de azúcar,Algodón de azúcar,Algodón de azúcar",79.8,"2025-01-09",0
+"2025-04-09","Pack de rutina de frescura completa : 1 musk + 1 bruma + 1 desodorante","Musk blanco / Musk blanco / Musk blanco",79.8,"2025-01-10",39.9
+"2025-05-02","MUSK ÍNTIMO | MUSKAT©","2 comprados = 1 gratis / Algodón de azúcar,Algodón de azúcar,Algodón de azúcar",79.8,"2025-02-02",0
+"2025-02-20","MUSK ÍNTIMO - CEREZA","Default Title",79.6,"2024-11-23",57.71
+"2025-02-22","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",79.6,"2024-11-25",154.22
+"2025-02-24","MUSK ÍNTIMO - ALMIZCLE BLANCO","Default Title",79.6,"2024-11-27",15.92
+"2025-03-05","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",79.6,"2024-12-06",0
+"2025-03-09","MUSK ÍNTIMO - ALMIZCLE BLANCO","Default Title",79.6,"2024-12-10",93.53
+"2025-03-09","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",79.6,"2024-12-10",0
+"2025-03-30","MUSK ÍNTIMO - ALMIZCLE BLANCO","Default Title",79.6,"2024-12-31",59.7
+"2025-04-22","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",79.6,"2025-01-23",0
+"2025-02-23","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",77.61,"2024-11-26",35.82
+"2025-03-31","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",77.61,"2025-01-01",35.82
+"2025-04-04","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",77.61,"2025-01-05",0
+"2025-05-05","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Musk Blanco",76.62,"2025-02-05",0
+"2025-04-20","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",76.61,"2025-01-21",19.9
+"2025-03-09","Pack fragancia : 5 brumas + 2 musks + 2 desodorantes","Musk blanco / Algodón de azúcar / Algodón de azúcar",76.41,"2024-12-10",0
+"2025-03-30","Pack fragancia : 5 brumas + 2 musks + 2 desodorantes","Musk blanco / Algodón de azúcar / Monoi",76.41,"2024-12-31",0
+"2025-02-23","Pack de rutina de frescura completa : 1 musk + 1 bruma + 1 desodorante","Algodón de azúcar / Algodón de azúcar / Musk blanco",75.81,"2024-11-26",0
+"2025-04-08","Pack de rutina de frescura completa : 1 musk + 1 bruma + 1 desodorante","Musk blanco / Musk blanco / Musk blanco",75.81,"2025-01-09",0
+"2025-05-03","Pack de rutina de frescura completa : 1 musk + 1 bruma + 1 desodorante","Musk blanco / Musk blanco / Musk blanco",75.81,"2025-02-03",0
+"2025-04-02","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",75.62,"2025-01-03",55.72
+"2025-04-13","MUSK ÍNTIMO - ALMIZCLE BLANCO","Default Title",75.62,"2025-01-14",139.3
+"2025-04-15","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",75.62,"2025-01-16",59.7
+"2025-04-30","MUSK ÍNTIMO - CEREZA","Default Title",75.62,"2025-01-31",0
+"2025-04-27","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",74.62,"2025-01-28",37.81
+"2025-05-07","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Musk Blanco",73.64,"2025-02-07",17.91
+"2025-03-23","MUSK ÍNTIMO - ALMIZCLE BLANCO","Default Title",73.62,"2024-12-24",0
+"2025-03-28","Pack de rutina de frescura completa : 1 musk + 1 bruma + 1 desodorante","Musk blanco / Musk blanco / Musk blanco",71.82,"2024-12-29",79.8
+"2025-04-26","Pack de rutina de frescura completa : 1 musk + 1 bruma + 1 desodorante","Musk blanco / Musk blanco / Musk blanco",71.82,"2025-01-27",35.91
+"2025-03-30","1 desodorante de musk blanco","Default Title",71.76,"2024-12-31",0
+"2025-03-14","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",71.64,"2024-12-15",39.8
+"2025-05-06","MUSK ÍNTIMO - MONOÏ","1 Muskat Musk íntimo Monoï",70.66,"2025-02-06",0
+"2025-02-13","Pack blackfriday : 2 musks + 2 desodorante + 2 brumas","Musk blanco / Musk blanco / Musk blanco",69.9,"2024-11-16",0
+"2025-02-15","Pack blackfriday : 2 musks + 2 desodorante + 2 brumas","Monoi / Coco rojo / Musk blanco",69.9,"2024-11-18",0
+"2025-02-16","Pack blackfriday : 2 musks + 2 desodorante + 2 brumas","Algodón de azúcar / Musk blanco / Musk blanco",69.9,"2024-11-19",0
+"2025-03-05","Pack blackfriday : 2 musks + 2 desodorante + 2 brumas","Monoi / Coco rojo / Musk blanco",69.9,"2024-12-06",0
+"2025-03-06","Pack blackfriday : 2 musks + 2 desodorante + 2 brumas","Algodón de azúcar / Algodón de azúcar / Musk blanco",69.9,"2024-12-07",0
+"2025-03-13","Pack blackfriday : 2 musks + 2 desodorante + 2 brumas","Musk blanco / Musk blanco / Musk blanco",69.9,"2024-12-14",0
+"2025-03-28","Pack blackfriday : 2 musks + 2 desodorante + 2 brumas","Musk blanco / Musk blanco / Musk blanco",69.9,"2024-12-29",0
+"2025-04-20","Pack blackfriday : 2 musks + 2 desodorante + 2 brumas","Algodón de azúcar / Coco rojo / Musk blanco",69.9,"2025-01-21",0
+"2025-04-23","Pack blackfriday : 2 musks + 2 desodorante + 2 brumas","Monoi / Musk blanco / Musk blanco",69.9,"2025-01-24",0
+"2025-04-30","1 bruma comprada = 1 musk al 50% de descuento","2 bruma comprada = 2 musk gratis / Musk Blanco,Coco rojo / Algodón de azúcar,Cereza",69.9,"2025-01-31",0
+"2025-02-13","2 brumas compradas = 3 brumas gratis","Musk blanco / Musk blanco",69.8,"2024-11-16",0
+"2025-02-17","Pack exótico : 1 musk monoi + 1 bruma de coco rojo","Default Title",69.8,"2024-11-20",0
+"2025-02-18","2 brumas compradas = 3 brumas gratis","Coco rojo / Coco rojo",69.8,"2024-11-21",0
+"2025-02-20","2 brumas compradas = 3 brumas gratis","Musk blanco / Algodón de azúcar",69.8,"2024-11-23",0
+"2025-02-25","2 brumas compradas = 3 brumas gratis","Musk blanco / Musk blanco",69.8,"2024-11-28",0
+"2025-02-25","2 brumas compradas = 3 brumas gratis","Coco rojo / Musk blanco",69.8,"2024-11-28",0
+"2025-03-02","Pack de dulces : 1 bruma de algodón de azúcar + 1 musk de algodón de azúcar","Default Title",69.8,"2024-12-03",0
+"2025-03-07","2 brumas compradas = 3 brumas gratis","Coco rojo / Algodón de azúcar",69.8,"2024-12-08",0
+"2025-03-08","2 brumas compradas = 3 brumas gratis","Algodón de azúcar / Coco rojo",69.8,"2024-12-09",0
+"2025-03-10","2 brumas compradas = 3 brumas gratis","Vainilla caramelo / Pinky",69.8,"2024-12-11",0
+"2025-03-13","Pack rosado : 1 bruma pinky + 1 musk de cereza","Default Title",69.8,"2024-12-14",0
+"2025-03-22","2 brumas compradas = 3 brumas gratis","Musk blanco / Musk blanco",69.8,"2024-12-23",0
+"2025-03-27","2 brumas compradas = 3 brumas gratis","Musk blanco / Coco rojo",69.8,"2024-12-28",0
+"2025-04-01","2 brumas compradas = 3 brumas gratis","Musk blanco / Musk blanco",69.8,"2025-01-02",0
+"2025-04-04","2 brumas compradas = 3 brumas gratis","Algodón de azúcar / Algodón de azúcar",69.8,"2025-01-05",0
+"2025-04-07","2 brumas compradas = 3 brumas gratis","Musk blanco / Coco rojo",69.8,"2025-01-08",0
+"2025-04-13","2 brumas compradas = 3 brumas gratis","Musk blanco / Musk blanco",69.8,"2025-01-14",0
+"2025-04-19","2 brumas compradas = 3 brumas gratis","Coco rojo / Vainilla caramelo",69.8,"2025-01-20",0
+"2025-04-27","2 brumas compradas = 3 brumas gratis","Musk blanco / Musk blanco",69.8,"2025-01-28",0
+"2025-05-05","MUSK ÍNTIMO | MUSKAT©","2 comprados = 1 gratis / Musk Blanco,Musk Blanco,Musk Blanco",67.84,"2025-02-05",0
+"2025-04-29","Bruma corporal de musk blanco","Default Title",64.56,"2025-01-30",69.8
+"2025-02-20","Pack de rutina de frescura completa : 1 musk + 1 bruma + 1 desodorante","Musk blanco / Musk blanco / Musk blanco",63.84,"2024-11-23",147.63
+"2025-04-13","Pack blackfriday : 2 musks + 2 desodorante + 2 brumas","Musk blanco / Musk blanco / Musk blanco",62.91,"2025-01-14",0
+"2025-02-19","Pack de dulces : 1 bruma de algodón de azúcar + 1 musk de algodón de azúcar","Default Title",62.82,"2024-11-22",0
+"2025-03-02","Pack exótico : 1 musk monoi + 1 bruma de coco rojo","Default Title",62.82,"2024-12-03",66.31
+"2025-04-02","2 brumas compradas = 3 brumas gratis","Pinky / Vainilla caramelo",62.82,"2025-01-03",0
+"2025-04-27","Pack delicadeza : 1 bruma de vainilla caramelo + 1 musk blanco","Default Title",62.82,"2025-01-28",0
+"2025-02-14","1 desodorante comprado = 1 almizcle al 50% de descuento","2 desodorantes comprados = 2 musk gratis / Algodón de azúcar,Monoi",59.9,"2024-11-17",0
+"2025-04-01","1 desodorante comprado = 1 almizcle al 50% de descuento","2 desodorantes comprados = 2 musk gratis / Musk Blanco,Musk Blanco",59.9,"2025-01-02",0
+"2025-02-13","MUSK ÍNTIMO | MUSKAT©","1 comprado = el segundo al 50% de descuento / Cereza,Cereza",59.8,"2024-11-16",0
+"2025-02-13","MUSK ÍNTIMO - MONOÏ","1 monoi musk comprado = el segundo al 50% de descuento",59.8,"2024-11-16",29.9
+"2025-02-16","1 desodorante comprado = 1 musk gratis","Algodón de azúcar / Musk blanco",59.8,"2024-11-19",0
+"2025-02-16","Bruma de algodón de azúcar","Default Title",59.8,"2024-11-19",0
+"2025-02-19","Bruma corporal Pinky","1 Bruma Pinky",59.8,"2024-11-22",0
+"2025-02-21","MUSK ÍNTIMO | MUSKAT©","1 comprado = el segundo al 50% de descuento / Musk Blanco,Musk Blanco",59.8,"2024-11-24",0
+"2025-02-24","1 desodorante comprado = 1 musk gratis","Musk blanco / Musk blanco",59.8,"2024-11-27",0
+"2025-03-09","1 desodorante comprado = 1 musk gratis","Musk blanco / Musk blanco",59.8,"2024-12-10",29.9
+"2025-03-23","MUSK ÍNTIMO | MUSKAT©","1 comprado = el segundo al 50% de descuento / Algodón de azúcar,Monoi",59.8,"2024-12-24",0
+"2025-03-29","1 desodorante comprado = 1 musk gratis","Musk blanco / Musk blanco",59.8,"2024-12-30",0
+"2025-03-31","MUSK ÍNTIMO | MUSKAT©","1 comprado = el segundo al 50% de descuento / Algodón de azúcar,Cereza",59.8,"2025-01-01",0
+"2025-04-13","Bruma corporal Pinky","2 brumas Pinky comprados = el tercero gratis",59.8,"2025-01-14",0
+"2025-04-15","MUSK ÍNTIMO | MUSKAT©","1 comprado = el segundo al 50% de descuento / Algodón de azúcar,Musk Blanco",59.8,"2025-01-16",0
+"2025-04-20","Bruma corporal Pinky","2 brumas Pinky comprados = el tercero gratis",59.8,"2025-01-21",0
+"2025-04-20","Bruma corporal de vainilla y caramelo","Compre 2 brumas de caramelo de vainilla = reciba la tercera gratis",59.8,"2025-01-21",0
+"2025-02-10","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",59.7,"2024-11-13",0
+"2025-02-12","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",59.7,"2024-11-15",22.41
+"2025-02-12","MUSK ÍNTIMO - CEREZA","Default Title",59.7,"2024-11-15",24.9
+"2025-02-25","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",59.7,"2024-11-28",71.64
+"2025-02-27","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",59.7,"2024-11-30",71.64
+"2025-03-07","MUSK ÍNTIMO - CEREZA","Default Title",59.7,"2024-12-08",17.91
+"2025-03-08","MUSK ÍNTIMO - ALMIZCLE BLANCO","Default Title",59.7,"2024-12-09",50.74
+"2025-03-09","MUSK ÍNTIMO - MONOÏ","1 Muskat Musk íntimo Monoï",59.7,"2024-12-10",17.91
+"2025-03-15","MUSK ÍNTIMO - ALMIZCLE BLANCO","Default Title",59.7,"2024-12-16",39.8
+"2025-03-28","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",59.7,"2024-12-29",115.42
+"2025-04-03","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",59.7,"2025-01-04",19.9
+"2025-04-06","MUSK ÍNTIMO - CEREZA","Default Title",59.7,"2025-01-07",79.6
+"2025-04-13","MUSK ÍNTIMO - CEREZA","Default Title",59.7,"2025-01-14",57.71
+"2025-04-16","MUSK ÍNTIMO - CEREZA","Default Title",59.7,"2025-01-17",0
+"2025-05-07","Pack blackfriday : 2 musks + 2 desodorante + 2 brumas","Musk blanco / Musk blanco / Musk blanco",59.42,"2025-02-07",0
+"2025-03-23","2 brumas compradas = 3 brumas gratis","Musk blanco / Musk blanco",59.33,"2024-12-24",0
+"2025-04-03","1 bruma comprada = 1 desodorante gratis","Musk blanco / Musk blanco",59.33,"2025-01-04",0
+"2025-05-03","2 brumas compradas = 3 brumas gratis","Vainilla caramelo / Coco rojo",59.33,"2025-02-03",0
+"2025-05-06","2 brumas compradas = 3 brumas gratis","Musk blanco / Pinky",59.33,"2025-02-06",0
+"2025-03-03","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",57.71,"2024-12-04",87.56
+"2025-03-07","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",57.71,"2024-12-08",19.9
+"2025-04-01","MUSK ÍNTIMO - ALMIZCLE BLANCO","Default Title",57.71,"2025-01-02",0
+"2025-04-21","MUSK ÍNTIMO - ALMIZCLE BLANCO","Default Title",57.71,"2025-01-22",19.9
+"2025-04-23","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",57.71,"2025-01-24",79.6
+"2025-05-01","MUSK ÍNTIMO - CEREZA","Default Title",57.71,"2025-02-01",0
+"2025-05-05","MUSK ÍNTIMO - CEREZA","Default Title",57.71,"2025-02-05",0
+"2025-02-22","Bruma corporal de vainilla y caramelo","1 Bruma de caramelo de vainilla",56.81,"2024-11-25",0
+"2025-02-22","MUSK ÍNTIMO | MUSKAT©","1 comprado = el segundo al 50% de descuento / Algodón de azúcar,Cereza",56.81,"2024-11-25",23.92
+"2025-03-03","MUSK ÍNTIMO | MUSKAT©","1 comprado = el segundo al 50% de descuento / Algodón de azúcar,Musk Blanco",56.81,"2024-12-04",0
+"2025-03-27","Bruma corporal de vainilla y caramelo","1 Bruma de caramelo de vainilla",56.81,"2024-12-28",0
+"2025-04-02","MUSK ÍNTIMO | MUSKAT©","1 comprado = el segundo al 50% de descuento / Algodón de azúcar,Cereza",56.81,"2025-01-03",0
+"2025-04-29","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",56.72,"2025-01-30",39.8
+"2025-04-28","Pack blackfriday : 2 musks + 2 desodorante + 2 brumas","Musk blanco / Vainilla caramelo / Musk blanco",55.92,"2025-01-29",0
+"2025-03-05","2 brumas compradas = 3 brumas gratis","Vainilla caramelo / Musk blanco",55.84,"2024-12-06",62.82
+"2025-04-07","2 brumas compradas = 3 brumas gratis","Coco rojo / Coco rojo",55.84,"2025-01-08",0
+"2025-04-15","2 brumas compradas = 3 brumas gratis","Musk blanco / Musk blanco",55.84,"2025-01-16",0
+"2025-04-20","2 brumas compradas = 3 brumas gratis","Algodón de azúcar / Musk blanco",55.84,"2025-01-21",0
+"2025-04-25","2 brumas compradas = 3 brumas gratis","Musk blanco / Musk blanco",55.84,"2025-01-26",0
+"2025-02-12","MUSK ÍNTIMO - ALMIZCLE BLANCO","Default Title",55.72,"2024-11-15",24.9
+"2025-02-16","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",55.72,"2024-11-19",0
+"2025-03-04","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",55.72,"2024-12-05",57.71
+"2025-03-10","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",55.72,"2024-12-11",19.9
+"2025-04-13","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",55.72,"2025-01-14",0
+"2025-05-06","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",55.72,"2025-02-06",39.8
+"2025-05-05","Bruma corporal de vainilla y caramelo","1 Bruma de caramelo de vainilla",55.32,"2025-02-05",0
+"2025-03-02","MUSK ÍNTIMO | MUSKAT©","1 comprado = el segundo al 50% de descuento / Musk Blanco,Monoi",55.31,"2024-12-03",0
+"2025-03-06","MUSK ÍNTIMO | MUSKAT©","1 comprado = el segundo al 50% de descuento / Algodón de azúcar,Algodón de azúcar",55.31,"2024-12-07",0
+"2025-04-26","1 desodorante comprado = 1 almizcle al 50% de descuento","2 desodorantes comprados = 2 musk gratis / Algodón de azúcar,Monoi",53.91,"2025-01-27",0
+"2025-04-20","MUSK ÍNTIMO - CEREZA","Default Title",53.73,"2025-01-21",19.9
+"2025-05-02","MUSK ÍNTIMO | MUSKAT©","1 Muskat Musk íntimo / Algodón de azúcar",53.73,"2025-02-02",19.9
+"2025-05-03","MUSK ÍNTIMO - CEREZA","Default Title",51.74,"2025-02-03",0
+"2025-04-11","1 bruma comprada = 50% de descuento en el desodorante","1 bruma comprada = 50% de descuento en el desodorante / Musk Blanco",49.95,"2025-01-12",0
+"2025-02-08","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Musk Blanco / Musk blanco",49.9,"2024-11-11",0
+"2025-02-08","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Monoï",49.9,"2024-11-11",0
+"2025-02-10","2 musks comprados = 3 musks gratis","Monoï / Algodón de azúcar / Algodón de azúcar",49.9,"2024-11-13",0
+"2025-02-10","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Musk blanco",49.9,"2024-11-13",0
+"2025-02-11","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Algodón de azúcar / Algodón de azúcar",49.9,"2024-11-14",0
+"2025-02-12","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Musk blanco",49.9,"2024-11-15",0
+"2025-02-12","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Cereza / Algodón de azúcar",49.9,"2024-11-15",0
+"2025-02-12","2 musks comprados = 3 musks gratis","Algodón de azúcar / Algodón de azúcar / Algodón de azúcar",49.9,"2024-11-15",0
+"2025-02-12","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Coco rojo",49.9,"2024-11-15",0
+"2025-02-13","2 musks comprados = 3 musks gratis","Musk blanco / Monoï / Cereza",49.9,"2024-11-16",0
+"2025-02-13","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Algodón de azúcar",49.9,"2024-11-16",0
+"2025-02-13","2 musks comprados = 3 musks gratis","Cereza / Cereza / Cereza",49.9,"2024-11-16",0
+"2025-02-13","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Musk Blanco / Musk blanco",49.9,"2024-11-16",53.91
+"2025-02-13","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Algodón de azúcar / Vainilla caramelo",49.9,"2024-11-16",0
+"2025-02-14","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Monoi / Musk blanco",49.9,"2024-11-17",0
+"2025-02-14","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Monoi / Vainilla caramelo",49.9,"2024-11-17",0
+"2025-02-14","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Monoï",49.9,"2024-11-17",0
+"2025-02-14","2 musks comprados = 3 musks gratis","Algodón de azúcar / Algodón de azúcar / Algodón de azúcar",49.9,"2024-11-17",0
+"2025-02-15","2 musks comprados = 3 musks gratis","Cereza / Musk blanco / Monoï",49.9,"2024-11-18",0
+"2025-02-15","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Monoï",49.9,"2024-11-18",0
+"2025-02-16","2 musks comprados = 3 musks gratis","Musk blanco / Algodón de azúcar / Monoï",49.9,"2024-11-19",0
+"2025-02-16","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Musk blanco",49.9,"2024-11-19",0
+"2025-02-16","2 musks comprados = 3 musks gratis","Algodón de azúcar / Cereza / Musk blanco",49.9,"2024-11-19",0
+"2025-02-16","2 musks comprados = 3 musks gratis","Algodón de azúcar / Musk blanco / Monoï",49.9,"2024-11-19",0
+"2025-02-16","2 musks comprados = 3 musks gratis","Cereza / Cereza / Cereza",49.9,"2024-11-19",0
+"2025-02-17","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Algodón de azúcar / Pinky",49.9,"2024-11-20",0
+"2025-02-17","2 musks comprados = 3 musks gratis","Musk blanco / Algodón de azúcar / Monoï",49.9,"2024-11-20",0
+"2025-02-17","2 musks comprados = 3 musks gratis","Algodón de azúcar / Cereza / Algodón de azúcar",49.9,"2024-11-20",0
+"2025-02-18","2 musks comprados = 3 musks gratis","Algodón de azúcar / Algodón de azúcar / Cereza",49.9,"2024-11-21",35.91
+"2025-02-18","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Musk blanco",49.9,"2024-11-21",0
+"2025-02-19","2 musks comprados = 3 musks gratis","Cereza / Monoï / Algodón de azúcar",49.9,"2024-11-22",0
+"2025-02-19","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Algodón de azúcar / Algodón de azúcar",49.9,"2024-11-22",0
+"2025-02-21","2 musks comprados = 3 musks gratis","Musk blanco / Algodón de azúcar / Monoï",49.9,"2024-11-24",0
+"2025-02-21","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Algodón de azúcar / Coco rojo",49.9,"2024-11-24",0
+"2025-02-23","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Monoi / Algodón de azúcar",49.9,"2024-11-26",0
+"2025-02-23","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Cereza",49.9,"2024-11-26",0
+"2025-02-23","2 musks comprados = 3 musks gratis","Cereza / Cereza / Cereza",49.9,"2024-11-26",44.91
+"2025-02-24","2 musks comprados = 3 musks gratis","Algodón de azúcar / Cereza / Algodón de azúcar",49.9,"2024-11-27",0
+"2025-02-24","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Musk blanco",49.9,"2024-11-27",0
+"2025-02-24","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Monoi / Musk blanco",49.9,"2024-11-27",44.91
+"2025-02-25","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Algodón de azúcar / Algodón de azúcar",49.9,"2024-11-28",0
+"2025-02-25","2 musks comprados = 3 musks gratis","Cereza / Algodón de azúcar / Monoï",49.9,"2024-11-28",39.92
+"2025-02-25","2 musks comprados = 3 musks gratis","Cereza / Algodón de azúcar / Musk blanco",49.9,"2024-11-28",0
+"2025-02-26","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Musk Blanco / Musk blanco",49.9,"2024-11-29",99.8
+"2025-02-27","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Algodón de azúcar / Vainilla caramelo",49.9,"2024-11-30",0
+"2025-02-27","2 musks comprados = 3 musks gratis","Cereza / Cereza / Monoï",49.9,"2024-11-30",84.83
+"2025-02-28","2 musks comprados = 3 musks gratis","Cereza / Monoï / Algodón de azúcar",49.9,"2024-12-01",0
+"2025-02-28","2 musks comprados = 3 musks gratis","Cereza / Algodón de azúcar / Cereza",49.9,"2024-12-01",0
+"2025-02-28","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Monoï",49.9,"2024-12-01",89.82
+"2025-02-28","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Musk Blanco / Musk blanco",49.9,"2024-12-01",172.15
+"2025-02-28","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Cereza / Algodón de azúcar",49.9,"2024-12-01",0
+"2025-03-01","2 musks comprados = 3 musks gratis","Musk blanco / Algodón de azúcar / Algodón de azúcar",49.9,"2024-12-02",0
+"2025-03-01","2 musks comprados = 3 musks gratis","Cereza / Algodón de azúcar / Musk blanco",49.9,"2024-12-02",0
+"2025-03-02","2 musks comprados = 3 musks gratis","Musk blanco / Algodón de azúcar / Musk blanco",49.9,"2024-12-03",0
+"2025-03-02","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Vainilla caramelo",49.9,"2024-12-03",49.9
+"2025-03-03","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Musk blanco",49.9,"2024-12-04",0
+"2025-03-03","2 musks comprados = 3 musks gratis","Algodón de azúcar / Monoï / Musk blanco",49.9,"2024-12-04",0
+"2025-03-05","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Monoi / Musk blanco",49.9,"2024-12-06",0
+"2025-03-05","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Monoi / Cereza / Musk blanco",49.9,"2024-12-06",0
+"2025-03-05","2 musks comprados = 3 musks gratis","Musk blanco / Algodón de azúcar / Monoï",49.9,"2024-12-06",0
+"2025-03-08","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Algodón de azúcar",49.9,"2024-12-09",49.9
+"2025-03-08","2 musks comprados = 3 musks gratis","Cereza / Monoï / Musk blanco",49.9,"2024-12-09",0
+"2025-03-08","2 musks comprados = 3 musks gratis","Cereza / Cereza / Cereza",49.9,"2024-12-09",0
+"2025-03-08","2 musks comprados = 3 musks gratis","Musk blanco / Monoï / Musk blanco",49.9,"2024-12-09",0
+"2025-03-09","2 musks comprados = 3 musks gratis","Musk blanco / Algodón de azúcar / Monoï",49.9,"2024-12-10",0
+"2025-03-09","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Cereza / Musk blanco",49.9,"2024-12-10",0
+"2025-03-10","2 musks comprados = 3 musks gratis","Algodón de azúcar / Algodón de azúcar / Algodón de azúcar",49.9,"2024-12-11",0
+"2025-03-10","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Musk blanco",49.9,"2024-12-11",89.82
+"2025-03-11","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Algodón de azúcar",49.9,"2024-12-12",0
+"2025-03-11","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Cereza / Musk blanco",49.9,"2024-12-12",49.9
+"2025-03-12","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Musk blanco",49.9,"2024-12-13",0
+"2025-03-14","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",49.9,"2024-12-15",49.9
+"2025-03-14","2 musks comprados = 3 musks gratis","Cereza / Cereza / Musk blanco",49.9,"2024-12-15",0
+"2025-03-14","2 musks comprados = 3 musks gratis","Cereza / Cereza / Cereza",49.9,"2024-12-15",0
+"2025-03-15","2 musks comprados = 3 musks gratis","Musk blanco / Monoï / Musk blanco",49.9,"2024-12-16",0
+"2025-03-17","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Cereza / Vainilla caramelo",49.9,"2024-12-18",0
+"2025-03-17","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Cereza / Pinky",49.9,"2024-12-18",0
+"2025-03-17","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Musk blanco",49.9,"2024-12-18",49.9
+"2025-03-17","2 musks comprados = 3 musks gratis","Algodón de azúcar / Musk blanco / Musk blanco",49.9,"2024-12-18",0
+"2025-03-18","2 musks comprados = 3 musks gratis","Cereza / Cereza / Cereza",49.9,"2024-12-19",0
+"2025-03-20","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Monoï",49.9,"2024-12-21",0
+"2025-03-20","2 musks comprados = 3 musks gratis","Musk blanco / Algodón de azúcar / Musk blanco",49.9,"2024-12-21",0
+"2025-03-20","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Cereza",49.9,"2024-12-21",0
+"2025-03-20","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Musk blanco",49.9,"2024-12-21",0
+"2025-03-21","2 musks comprados = 3 musks gratis","Cereza / Cereza / Monoï",49.9,"2024-12-22",0
+"2025-03-21","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Musk Blanco / Musk blanco",49.9,"2024-12-22",0
+"2025-03-21","2 musks comprados = 3 musks gratis","Musk blanco / Algodón de azúcar / Monoï",49.9,"2024-12-22",0
+"2025-03-21","2 musks comprados = 3 musks gratis","Algodón de azúcar / Cereza / Cereza",49.9,"2024-12-22",0
+"2025-03-22","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Musk blanco",49.9,"2024-12-23",89.82
+"2025-03-22","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Monoi / Pinky",49.9,"2024-12-23",0
+"2025-03-23","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Musk blanco",49.9,"2024-12-24",0
+"2025-03-23","2 musks comprados = 3 musks gratis","Algodón de azúcar / Algodón de azúcar / Algodón de azúcar",49.9,"2024-12-24",0
+"2025-03-23","2 musks comprados = 3 musks gratis","Cereza / Cereza / Cereza",49.9,"2024-12-24",0
+"2025-03-24","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Cereza / Pinky",49.9,"2024-12-25",0
+"2025-03-24","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Musk blanco",49.9,"2024-12-25",0
+"2025-03-26","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Monoï",49.9,"2024-12-27",0
+"2025-03-27","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Algodón de azúcar",49.9,"2024-12-28",49.9
+"2025-03-27","2 musks comprados = 3 musks gratis","Musk blanco / Monoï / Musk blanco",49.9,"2024-12-28",0
+"2025-03-27","2 musks comprados = 3 musks gratis","Cereza / Cereza / Monoï",49.9,"2024-12-28",0
+"2025-03-28","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Monoï",49.9,"2024-12-29",0
+"2025-03-28","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Cereza",49.9,"2024-12-29",0
+"2025-03-29","2 musks comprados = 3 musks gratis","Musk blanco / Monoï / Algodón de azúcar",49.9,"2024-12-30",0
+"2025-03-29","2 musks comprados = 3 musks gratis","Monoï / Algodón de azúcar / Musk blanco",49.9,"2024-12-30",0
+"2025-03-29","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Monoi / Musk blanco",49.9,"2024-12-30",0
+"2025-03-30","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Monoï",49.9,"2024-12-31",0
+"2025-03-30","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Monoi / Algodón de azúcar / Algodón de azúcar",49.9,"2024-12-31",0
+"2025-03-30","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Musk blanco",49.9,"2024-12-31",0
+"2025-03-31","2 musks comprados = 3 musks gratis","Musk blanco / Monoï / Algodón de azúcar",49.9,"2025-01-01",0
+"2025-03-31","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Algodón de azúcar / Musk blanco",49.9,"2025-01-01",0
+"2025-04-01","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Cereza / Vainilla caramelo",49.9,"2025-01-02",49.9
+"2025-04-01","2 musks comprados = 3 musks gratis","Musk blanco / Algodón de azúcar / Monoï",49.9,"2025-01-02",0
+"2025-04-02","2 musks comprados = 3 musks gratis","Cereza / Cereza / Algodón de azúcar",49.9,"2025-01-03",0
+"2025-04-03","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Algodón de azúcar / Algodón de azúcar",49.9,"2025-01-04",0
+"2025-04-03","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",49.9,"2025-01-04",49.9
+"2025-04-04","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Algodón de azúcar / Algodón de azúcar",49.9,"2025-01-05",0
+"2025-04-04","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Musk blanco",49.9,"2025-01-05",0
+"2025-04-04","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Algodón de azúcar",49.9,"2025-01-05",0
+"2025-04-04","2 musks comprados = 3 musks gratis","Algodón de azúcar / Musk blanco / Cereza",49.9,"2025-01-05",0
+"2025-04-04","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Musk Blanco / Musk blanco",49.9,"2025-01-05",0
+"2025-04-05","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Algodón de azúcar / Coco rojo",49.9,"2025-01-06",0
+"2025-04-06","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Algodón de azúcar",49.9,"2025-01-07",0
+"2025-04-06","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",49.9,"2025-01-07",49.9
+"2025-04-06","2 musks comprados = 3 musks gratis","Cereza / Cereza / Cereza",49.9,"2025-01-07",0
+"2025-04-08","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",49.9,"2025-01-09",0
+"2025-04-08","2 musks comprados = 3 musks gratis","Cereza / Algodón de azúcar / Musk blanco",49.9,"2025-01-09",0
+"2025-04-09","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Musk Blanco / Coco rojo",49.9,"2025-01-10",0
+"2025-04-09","2 musks comprados = 3 musks gratis","Cereza / Cereza / Cereza",49.9,"2025-01-10",0
+"2025-04-09","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Musk blanco",49.9,"2025-01-10",0
+"2025-04-09","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Algodón de azúcar",49.9,"2025-01-10",0
+"2025-04-09","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",49.9,"2025-01-10",84.83
+"2025-04-10","2 musks comprados = 3 musks gratis","Cereza / Algodón de azúcar / Algodón de azúcar",49.9,"2025-01-11",0
+"2025-04-10","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",49.9,"2025-01-11",0
+"2025-04-10","2 musks comprados = 3 musks gratis","Cereza / Cereza / Cereza",49.9,"2025-01-11",0
+"2025-04-11","2 musks comprados = 3 musks gratis","Cereza / Musk blanco / Monoï",49.9,"2025-01-12",0
+"2025-04-11","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Cereza / Musk blanco",49.9,"2025-01-12",0
+"2025-04-11","2 musks comprados = 3 musks gratis","Cereza / Cereza / Algodón de azúcar",49.9,"2025-01-12",0
+"2025-04-11","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Monoi / Vainilla caramelo",49.9,"2025-01-12",49.9
+"2025-04-11","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Algodón de azúcar / Pinky",49.9,"2025-01-12",0
+"2025-04-12","2 musks comprados = 3 musks gratis","Algodón de azúcar / Algodón de azúcar / Algodón de azúcar",49.9,"2025-01-13",0
+"2025-04-12","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Musk blanco",49.9,"2025-01-13",0
+"2025-04-12","2 musks comprados = 3 musks gratis","Algodón de azúcar / Musk blanco / Cereza",49.9,"2025-01-13",0
+"2025-04-12","2 musks comprados = 3 musks gratis","Cereza / Musk blanco / Monoï",49.9,"2025-01-13",0
+"2025-04-12","2 musks comprados = 3 musks gratis","Cereza / Algodón de azúcar / Monoï",49.9,"2025-01-13",0
+"2025-04-13","2 musks comprados = 3 musks gratis","Cereza / Musk blanco / Monoï",49.9,"2025-01-14",0
+"2025-04-13","2 musks comprados = 3 musks gratis","Algodón de azúcar / Algodón de azúcar / Algodón de azúcar",49.9,"2025-01-14",0
+"2025-04-13","2 musks comprados = 3 musks gratis","Algodón de azúcar / Monoï / Cereza",49.9,"2025-01-14",0
+"2025-04-14","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Cereza",49.9,"2025-01-15",0
+"2025-04-14","2 musks comprados = 3 musks gratis","Musk blanco / Algodón de azúcar / Cereza",49.9,"2025-01-15",0
+"2025-04-14","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Monoi / Musk blanco",49.9,"2025-01-15",0
+"2025-04-15","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Algodón de azúcar",49.9,"2025-01-16",0
+"2025-04-15","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Algodón de azúcar / Musk blanco",49.9,"2025-01-16",0
+"2025-04-15","2 musks comprados = 3 musks gratis","Algodón de azúcar / Algodón de azúcar / Algodón de azúcar",49.9,"2025-01-16",0
+"2025-04-15","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Monoï",49.9,"2025-01-16",49.9
+"2025-04-15","2 musks comprados = 3 musks gratis","Musk blanco / Algodón de azúcar / Cereza",49.9,"2025-01-16",0
+"2025-04-15","2 musks comprados = 3 musks gratis","Algodón de azúcar / Monoï / Monoï",49.9,"2025-01-16",0
+"2025-04-16","2 musks comprados = 3 musks gratis","Algodón de azúcar / Algodón de azúcar / Monoï",49.9,"2025-01-17",0
+"2025-04-16","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Vainilla caramelo",49.9,"2025-01-17",0
+"2025-04-16","2 musks comprados = 3 musks gratis","Cereza / Algodón de azúcar / Algodón de azúcar",49.9,"2025-01-17",0
+"2025-04-16","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Musk Blanco / Vainilla caramelo",49.9,"2025-01-17",0
+"2025-04-16","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Cereza / Vainilla caramelo",49.9,"2025-01-17",0
+"2025-04-17","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Musk blanco",49.9,"2025-01-18",0
+"2025-04-17","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",49.9,"2025-01-18",0
+"2025-04-18","2 musks comprados = 3 musks gratis","Musk blanco / Algodón de azúcar / Monoï",49.9,"2025-01-19",0
+"2025-04-18","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Algodón de azúcar / Vainilla caramelo",49.9,"2025-01-19",0
+"2025-04-20","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Monoï",49.9,"2025-01-21",0
+"2025-04-20","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Monoi / Musk blanco",49.9,"2025-01-21",0
+"2025-04-20","2 musks comprados = 3 musks gratis","Cereza / Musk blanco / Monoï",49.9,"2025-01-21",0
+"2025-04-20","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Algodón de azúcar",49.9,"2025-01-21",0
+"2025-04-20","2 musks comprados = 3 musks gratis","Algodón de azúcar / Musk blanco / Algodón de azúcar",49.9,"2025-01-21",0
+"2025-04-20","2 musks comprados = 3 musks gratis","Cereza / Cereza / Cereza",49.9,"2025-01-21",0
+"2025-04-21","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Musk blanco",49.9,"2025-01-22",49.9
+"2025-04-21","2 musks comprados = 3 musks gratis","Cereza / Cereza / Cereza",49.9,"2025-01-22",0
+"2025-04-21","2 musks comprados = 3 musks gratis","Monoï / Algodón de azúcar / Cereza",49.9,"2025-01-22",0
+"2025-04-22","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Algodón de azúcar",49.9,"2025-01-23",0
+"2025-04-22","2 musks comprados = 3 musks gratis","Cereza / Cereza / Cereza",49.9,"2025-01-23",0
+"2025-04-22","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Musk Blanco / Algodón de azúcar",49.9,"2025-01-23",0
+"2025-04-22","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Monoï",49.9,"2025-01-23",0
+"2025-04-22","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Musk blanco",49.9,"2025-01-23",0
+"2025-04-24","2 musks comprados = 3 musks gratis","Musk blanco / Monoï / Musk blanco",49.9,"2025-01-25",0
+"2025-04-24","2 musks comprados = 3 musks gratis","Algodón de azúcar / Cereza / Monoï",49.9,"2025-01-25",0
+"2025-04-24","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Algodón de azúcar",49.9,"2025-01-25",0
+"2025-04-25","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Musk Blanco / Musk blanco",49.9,"2025-01-26",0
+"2025-04-25","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",49.9,"2025-01-26",0
+"2025-04-25","2 musks comprados = 3 musks gratis","Musk blanco / Monoï / Monoï",49.9,"2025-01-26",0
+"2025-04-25","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Musk Blanco / Vainilla caramelo",49.9,"2025-01-26",0
+"2025-04-26","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Cereza / Vainilla caramelo",49.9,"2025-01-27",0
+"2025-04-26","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Cereza / Vainilla caramelo",49.9,"2025-01-27",0
+"2025-04-26","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Musk Blanco / Musk blanco",49.9,"2025-01-27",0
+"2025-04-27","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Musk Blanco / Musk blanco",49.9,"2025-01-28",0
+"2025-04-27","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Monoï",49.9,"2025-01-28",39.92
+"2025-04-29","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Monoi / Coco rojo",49.9,"2025-01-30",0
+"2025-04-30","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Monoï",49.9,"2025-01-31",0
+"2025-04-30","2 musks comprados = 3 musks gratis","Cereza / Algodón de azúcar / Cereza",49.9,"2025-01-31",0
+"2025-04-30","2 musks comprados = 3 musks gratis","Musk blanco / Algodón de azúcar / Cereza",49.9,"2025-01-31",0
+"2025-05-01","2 musks comprados = 3 musks gratis","Cereza / Algodón de azúcar / Monoï",49.9,"2025-02-01",0
+"2025-05-01","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Cereza",49.9,"2025-02-01",0
+"2025-05-01","2 musks comprados = 3 musks gratis","Cereza / Musk blanco / Monoï",49.9,"2025-02-01",0
+"2025-05-01","2 musks comprados = 3 musks gratis","Algodón de azúcar / Algodón de azúcar / Monoï",49.9,"2025-02-01",0
+"2025-05-02","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Algodón de azúcar",49.9,"2025-02-02",0
+"2025-05-02","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Algodón de azúcar / Algodón de azúcar",49.9,"2025-02-02",0
+"2025-05-03","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",49.9,"2025-02-03",0
+"2025-05-03","2 musks comprados = 3 musks gratis","Musk blanco / Algodón de azúcar / Cereza",49.9,"2025-02-03",0
+"2025-05-03","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Algodón de azúcar / Pinky",49.9,"2025-02-03",0
+"2025-05-05","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Musk Blanco / Vainilla caramelo",49.9,"2025-02-05",0
+"2025-05-05","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Cereza",49.9,"2025-02-05",0
+"2025-05-05","2 musks comprados = 3 musks gratis","Cereza / Cereza / Algodón de azúcar",49.9,"2025-02-05",0
+"2025-05-05","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",49.9,"2025-02-05",0
+"2025-05-06","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Cereza / Pinky",49.9,"2025-02-06",0
+"2025-05-06","2 musks comprados = 3 musks gratis","Cereza / Algodón de azúcar / Monoï",49.9,"2025-02-06",0
+"2025-05-07","2 musks comprados = 3 musks gratis","Musk blanco / Algodón de azúcar / Monoï",49.9,"2025-02-07",44.91
+"2025-02-18","1 desodorante comprado = 1 musk gratis","Musk blanco / Musk blanco",47.84,"2024-11-21",0
+"2025-04-03","1 desodorante comprado = 1 musk gratis","Algodón de azúcar / Musk blanco",47.84,"2025-01-04",0
+"2025-03-15","1 bruma comprada = 1 musk al 50% de descuento","1 bruma comprada = 1 almizcle al 50% de descuento / Coco Rojo / Musk Blanco",47.35,"2024-12-16",0
+"2025-04-23","1 bruma comprada = 50% de descuento en el desodorante","1 bruma comprada = 50% de descuento en el desodorante / Musk Blanco",44.95,"2025-01-24",0
+"2025-02-08","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",44.91,"2024-11-11",0
+"2025-02-10","2 musks comprados = 3 musks gratis","Cereza / Cereza / Monoï",44.91,"2024-11-13",0
+"2025-02-11","2 musks comprados = 3 musks gratis","Cereza / Musk blanco / Algodón de azúcar",44.91,"2024-11-14",0
+"2025-02-12","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Musk Blanco / Musk blanco",44.91,"2024-11-15",0
+"2025-02-13","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Cereza / Musk blanco",44.91,"2024-11-16",0
+"2025-02-13","2 musks comprados = 3 musks gratis","Musk blanco / Monoï / Musk blanco",44.91,"2024-11-16",0
+"2025-02-13","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Algodón de azúcar / Coco rojo",44.91,"2024-11-16",0
+"2025-02-13","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Algodón de azúcar",44.91,"2024-11-16",0
+"2025-02-14","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Musk Blanco / Musk blanco",44.91,"2024-11-17",59.9
+"2025-02-15","2 musks comprados = 3 musks gratis","Musk blanco / Monoï / Musk blanco",44.91,"2024-11-18",0
+"2025-02-15","2 musks comprados = 3 musks gratis","Cereza / Musk blanco / Algodón de azúcar",44.91,"2024-11-18",0
+"2025-02-16","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Algodón de azúcar / Algodón de azúcar",44.91,"2024-11-19",0
+"2025-02-17","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Algodón de azúcar",44.91,"2024-11-20",0
+"2025-02-18","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Cereza / Vainilla caramelo",44.91,"2024-11-21",0
+"2025-02-18","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Vainilla caramelo",44.91,"2024-11-21",0
+"2025-02-18","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Monoi / Coco rojo",44.91,"2024-11-21",0
+"2025-02-19","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Musk Blanco / Musk blanco",44.91,"2024-11-22",101.83
+"2025-02-20","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Algodón de azúcar / Algodón de azúcar",44.91,"2024-11-23",0
+"2025-02-20","2 musks comprados = 3 musks gratis","Algodón de azúcar / Cereza / Musk blanco",44.91,"2024-11-23",0
+"2025-02-21","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Vainilla caramelo",44.91,"2024-11-24",0
+"2025-02-21","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Monoi / Cereza / Musk blanco",44.91,"2024-11-24",0
+"2025-02-21","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Cereza / Algodón de azúcar",44.91,"2024-11-24",0
+"2025-02-22","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Cereza / Algodón de azúcar",44.91,"2024-11-25",0
+"2025-02-23","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",44.91,"2024-11-26",44.91
+"2025-02-23","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Algodón de azúcar / Vainilla caramelo",44.91,"2024-11-26",0
+"2025-02-23","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Algodón de azúcar",44.91,"2024-11-26",0
+"2025-02-23","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Cereza / Algodón de azúcar",44.91,"2024-11-26",0
+"2025-02-23","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Musk Blanco / Musk blanco",44.91,"2024-11-26",0
+"2025-02-24","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Monoi / Coco rojo",44.91,"2024-11-27",0
+"2025-02-25","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Cereza / Vainilla caramelo",44.91,"2024-11-28",0
+"2025-02-26","2 musks comprados = 3 musks gratis","Musk blanco / Musk blanco / Cereza",44.91,"2024-11-29",44.91
+"2025-02-27","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Algodón de azúcar / Pinky",44.91,"2024-11-30",0
+"2025-03-01","2 musks comprados = 3 musks gratis","Cereza / Cereza / Cereza",44.91,"2024-12-02",0
+"2025-03-01","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",44.91,"2024-12-02",44.91
+"2025-03-01","2 musks comprados = 3 musks gratis","Cereza / Monoï / Cereza",44.91,"2024-12-02",0
+"2025-03-02","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Cereza / Musk blanco",44.91,"2024-12-03",49.9
+"2025-03-02","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",44.91,"2024-12-03",39.92
+"2025-03-03","2 musks comprados = 3 musks gratis","Musk blanco / Cereza / Monoï",44.91,"2024-12-04",0
+"2025-03-04","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Monoi / Musk blanco",44.91,"2024-12-05",0
+"2025-03-05","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Cereza / Musk blanco",44.91,"2024-12-06",0
+"2025-03-06","2 musks comprados = 3 musks gratis","Musk blanco / Algodón de azúcar / Cereza",44.91,"2024-12-07",44.91
+"2025-03-07","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Vainilla caramelo",44.91,"2024-12-08",0
+"2025-03-07","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Algodón de azúcar / Vainilla caramelo",44.91,"2024-12-08",0
+"2025-03-08","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Cereza / Musk blanco",44.91,"2024-12-09",0
+"2025-03-08","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Algodón de azúcar / Algodón de azúcar",44.91,"2024-12-09",0
+"2025-03-08","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",44.91,"2024-12-09",94.81
+"2025-03-08","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Algodón de azúcar / Vainilla caramelo",44.91,"2024-12-09",0
+"2025-03-09","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Cereza / Pinky",44.91,"2024-12-10",0
+"2025-03-09","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",44.91,"2024-12-10",0
+"2025-03-10","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Musk Blanco / Musk blanco",44.91,"2024-12-11",39.92
+"2025-03-11","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Cereza / Algodón de azúcar",44.91,"2024-12-12",0
+"2025-03-12","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Monoi / Algodón de azúcar",44.91,"2024-12-13",0
+"2025-03-12","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Cereza / Musk blanco",44.91,"2024-12-13",0
+"2025-03-13","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Cereza / Algodón de azúcar",44.91,"2024-12-14",0
+"2025-03-15","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Monoi / Algodón de azúcar",44.91,"2024-12-16",0
+"2025-03-15","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Cereza / Vainilla caramelo",44.91,"2024-12-16",0
+"2025-03-16","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Cereza / Algodón de azúcar",44.91,"2024-12-17",0
+"2025-03-16","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Monoi / Pinky",44.91,"2024-12-17",49.9
+"2025-03-16","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Cereza / Algodón de azúcar / Pinky",44.91,"2024-12-17",0
+"2025-03-18","2 musks comprados = 3 musks gratis","Cereza / Monoï / Algodón de azúcar",44.91,"2024-12-19",0
+"2025-03-20","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",44.91,"2024-12-21",0
+"2025-03-20","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Algodón de azúcar / Musk blanco",44.91,"2024-12-21",0
+"2025-03-22","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",44.91,"2024-12-23",0
+"2025-03-24","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Monoi / Vainilla caramelo",44.91,"2024-12-25",0
+"2025-03-24","2 musks comprados = 3 musks gratis","Musk blanco / Algodón de azúcar / Cereza",44.91,"2024-12-25",0
+"2025-03-25","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",44.91,"2024-12-26",0
+"2025-03-26","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Cereza / Musk blanco",44.91,"2024-12-27",0
+"2025-03-26","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Monoi / Pinky",44.91,"2024-12-27",0
+"2025-03-26","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Monoi / Musk Blanco / Pinky",44.91,"2024-12-27",0
+"2025-03-27","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Algodón de azúcar / Musk blanco",44.91,"2024-12-28",0
+"2025-03-27","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Cereza / Pinky",44.91,"2024-12-28",0
+"2025-03-30","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Algodón de azúcar / Algodón de azúcar",44.91,"2024-12-31",44.91
+"2025-03-30","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Algodón de azúcar / Musk blanco",44.91,"2024-12-31",0
+"2025-03-30","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Monoi / Pinky",44.91,"2024-12-31",0
+"2025-03-31","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Musk Blanco / Vainilla caramelo",44.91,"2025-01-01",0
+"2025-04-01","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Musk Blanco / Musk blanco",44.91,"2025-01-02",49.9
+"2025-04-01","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Algodón de azúcar / Algodón de azúcar / Algodón de azúcar",44.91,"2025-01-02",0
+"2025-04-03","2 musks comprados = 3 musks gratis","Algodón de azúcar / Algodón de azúcar / Algodón de azúcar",44.91,"2025-01-04",0
+"2025-04-04","2 musks comprados = 3 musks gratis","Cereza / Musk blanco / Algodón de azúcar",44.91,"2025-01-05",0
+"2025-04-05","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Cereza / Musk blanco",44.91,"2025-01-06",0
+"2025-04-05","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Musk Blanco / Musk blanco",44.91,"2025-01-06",0
+"2025-04-06","Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma","Musk Blanco / Monoi / Musk blanco",44.91,"2025-01-07",0
