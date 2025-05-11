@@ -1,1468 +1,231 @@
 "use client";
+
 import React from "react";
+import { TooltipProvider } from "./components/ui/tooltip";
+
+// Import data
 import {
-  PieChart,
-  Pie,
-  Cell,
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-  Legend,
-} from "recharts";
+  scentData,
+  productTypeData,
+  structureData,
+  financialData,
+  monthlySalesData,
+  solutionComponents,
+  COLORS,
+  PRODUCT_COLORS,
+  FINANCIAL_COLORS,
+  SOLUTION_COLORS,
+  revenueLossData,
+  discountLossData,
+  top10ProductData,
+} from "./data/chartData";
+
+// Import components
+import PieChartComponent from "./components/charts/PieChartComponent";
+import BarChartComponent from "./components/charts/BarChartComponent";
+import HeaderSection from "./components/sections/HeaderSection";
+import SectionHeader from "./components/sections/SectionHeader";
+import RevenueInsights from "./components/sections/RevenueInsights";
+import ProductAnalysis from "./components/sections/ProductAnalysis";
+import ProductSummary from "./components/sections/ProductSummary";
+import DiscountAnalysis from "./components/sections/DiscountAnalysis";
+import CriticalProblems from "./components/sections/CriticalProblems";
+import StrategicApproaches from "./components/sections/StrategicApproaches";
 
 const MuskatPresentation = () => {
-  // Sales by Scent data
-  const scentData = [
+  // Revenue insights data
+  const revenueInsights = [
     {
-      name: "Cotton Candy",
-      value: 24164.79,
-      percentage: "44.1%",
-      color: "#FB9A9C",
+      highlight: "75.6% of revenue",
+      text: "comes from just two scents (Cotton Candy and White Musk)",
     },
     {
-      name: "White Musk",
-      value: 17274.46,
-      percentage: "31.5%",
-      color: "#00B5E2",
+      highlight: "Bundle offerings",
+      text: "account for 60.9% of total revenue (€33,369.41)",
     },
-    { name: "Cherry", value: 3275.38, percentage: "6.0%", color: "#FF5630" },
-    { name: "Monoï", value: 1489.66, percentage: "2.7%", color: "#8A5A44" },
     {
-      name: "Other/Mixed",
-      value: 8584.98,
-      percentage: "15.7%",
-      color: "#CCCCCC",
+      highlight: "Data Blindness:",
+      text: '15.7% of revenue (€8,584.98) is trapped in an "Other/Mixed" category due to bundle tracking issues',
+    },
+    {
+      highlight: "Missing Products:",
+      text: "Despite Cotton Candy being your #1 seller (44.1%), you have no Cotton Candy deodorant or body mist products",
     },
   ];
 
-  // Product Type performance
-  const productTypeData = [
-    { name: "Musk", value: 19578.05, percentage: "35.7%" },
-    { name: "Bundle", value: 33369.41, percentage: "60.9%" },
-    { name: "Body Mist", value: 1593.01, percentage: "2.9%" },
-    { name: "Deodorant", value: 544.87, percentage: "1.0%" },
-  ];
-
-  // Comparing current vs proposed structure
-  const structureData = [
-    { name: "Current", variants: 217 },
-    { name: "Proposed", variants: 8 },
-  ];
-
-  // Financial Impact data
-  const financialData = [
-    { name: "New Revenue", value: 33150 },
-    { name: "Inventory Savings", value: 6575 },
-    { name: "Operational Savings", value: 10000 },
-  ];
-
-  // Monthly sales trends
-  const monthlySalesData = [
-    { name: "Feb", "Cotton Candy": 5107.32, "White Musk": 5876.71 },
-    { name: "Mar", "Cotton Candy": 6347.48, "White Musk": 9962.03 },
-    { name: "Apr", "Cotton Candy": 5789.78, "White Musk": 9454.27 },
-    { name: "May", "Cotton Candy": 1983, "White Musk": 2766.98 },
-  ];
-
-  // Solution components
-  const solutionComponents = [
+  // Critical problems data
+  const criticalProblems = [
     {
-      name: "Sensorial Experiences",
-      description:
-        "Enhanced versions with warming, cooling, or effervescent effects",
-      percentage: 25,
+      title: "Technical Bloat in Your Shopify Store",
+      analogy:
+        "You're maintaining 217 separate product variants when only 79 drive meaningful revenue.",
+      why: [
+        "Fragments your sales data across 217 database entries",
+        "Complicates your inventory management",
+        "Makes analytics nearly impossible",
+      ],
     },
     {
-      name: "Fragrance Intensity Options",
-      description: "Different intensity levels (Soft, Regular, Intense)",
-      percentage: 20,
+      title: "Missing Profitable Products",
+      analogy:
+        "Despite Cotton Candy being your #1 seller (44.1%), you have no Cotton Candy deodorant or body mist products.",
+      why: [
+        "You're losing obvious cross-selling opportunities",
+        "Customers want matching products in their favorite scent",
+        "You're leaving revenue on the table from your top seller",
+      ],
     },
     {
-      name: "Seasonal Limited Editions",
-      description: "Quarterly releases aligned with seasonal themes",
-      percentage: 30,
-    },
-    {
-      name: "Complete Care System",
-      description: "Expanded product ecosystem",
-      percentage: 25,
+      title: "Decision Paralysis",
+      analogy:
+        "Your customers face 217 product options when shopping, overwhelming them and reducing conversions.",
+      why: [
+        "Confused customers don't convert",
+        "Every extra click or decision reduces sales by 7%",
+        "Complex product structure leads to support questions",
+      ],
     },
   ];
 
-  // Colors
-  const COLORS = ["#FB9A9C", "#00B5E2", "#FF5630", "#8A5A44", "#CCCCCC"];
-  const PRODUCT_COLORS = ["#36B37E", "#FFAB00", "#FF5630", "#FF8B00"];
-  const FINANCIAL_COLORS = ["#36B37E", "#00B8D9", "#6554C0"];
-  const SOLUTION_COLORS = ["#ec4899", "#8b5cf6", "#06b6d4", "#10b981"];
+  // Product summary data
+  const productSummaryFindings = [
+    {
+      text: "Your top 10 products have 115 database variants but only 44 active variants are actually selling",
+      highlight: "115 database variants",
+    },
+    {
+      text: "62% of your product database entries are not generating meaningful sales",
+    },
+    {
+      text: "Inconsistent promotion structures make inventory forecasting nearly impossible",
+    },
+    {
+      text: "Cherry and Monoï scents have 12 variants but make up only 8.7% of revenue",
+    },
+  ];
+
+  const businessImpact = [
+    "Shopify database bloat slowing down your store's performance",
+    "Confusing shopping experience with too many similar options",
+    "Impossible to track which scents are actually popular in bundle sales",
+    "Excessive inventory costs maintaining low-selling variants",
+    "Analytics nightmare with fragmented sales data",
+  ];
+
+  // Strategic approaches data
+  const strategicApproaches = [
+    {
+      title: "APPROACH 1: RADICAL SIMPLIFICATION WITH NEW PRODUCTS",
+      description: "This approach introduces new Cotton Candy products to complete your lineup:",
+      colorClass: "bg-pink-900/20",
+      borderColorClass: "border-pink-800",
+      titleColorClass: "text-pink-400",
+      products: [
+        { name: "Cotton Candy Musk" },
+        { name: "White Musk" },
+        { name: "Cotton Candy Deodorant", isNew: true },
+        { name: "White Musk Deodorant" },
+        { name: "Cotton Candy Body Mist", isNew: true },
+        { name: "White Musk Body Mist" },
+        { name: "Cotton Candy Collection" },
+        { name: "White Musk Collection" },
+      ],
+      benefits: [
+        "Complete product families for both top-selling scents",
+        "Maximizes cross-selling potential with matching products",
+        "Addresses the missing products gap in your bestselling scent",
+        "Higher potential revenue (+€33,150 vs +€25,500)",
+      ],
+      financialImpact: "+€33,150",
+    },
+    {
+      title: "APPROACH 2: OPTIMIZATION WITH EXISTING PRODUCTS ONLY",
+      description: "This approach uses strategic bundles to maximize your current inventory:",
+      colorClass: "bg-blue-900/20",
+      borderColorClass: "border-blue-800",
+      titleColorClass: "text-blue-400",
+      products: [
+        { name: "Cotton Candy Musk" },
+        { name: "White Musk" },
+        { name: "White Musk Deodorant" },
+        { name: "White Musk Body Mist" },
+        { name: "Bestsellers Duo", description: "Cotton Candy + White Musk" },
+        { name: "White Musk Complete Collection", description: "Musk + Deodorant + Body Mist" },
+        { name: "Mix & Match Trio", description: "Any 3 products - customer choice" },
+        { name: "Ultimate Freshness Pack", description: "2 Musks + 1 Deodorant + 1 Body Mist" },
+      ],
+      benefits: [
+        "Zero product development costs - uses only existing inventory",
+        "Faster implementation timeline (weeks vs months)",
+        "Lower risk approach with immediate implementation",
+        "Still delivers significant profit improvement (+€40,250)",
+      ],
+      financialImpact: "+€40,250",
+    },
+  ];
 
   return (
-    <div className=" bg-gray-950 font-sans text-gray-200">
-      <div className="max-w-7xl flex flex-col gap-6 p-8 mt-8 mx-auto bg-gray-900 ">
-        <div className="">
+    <TooltipProvider>
+      <div className="bg-gray-950 font-sans text-gray-200">
+        <div className="max-w-7xl flex flex-col gap-6 p-8 mt-8 mx-auto bg-gray-900">
           {/* HEADER SECTION */}
-          <div className="">
-            <h1 className="text-4xl font-bold text-center mb-4 text-pink-400">
-              MUSKAT PRODUCT LINE OPTIMIZATION
-            </h1>
-            <p className="text-lg text-center mb-4 text-gray-300">
-              Data-Driven Strategy | May 2025
-            </p>
-            <div className="border-t border-gray-700 my-6"></div>
-            <p className="text-lg mb-4 text-gray-300 leading-relaxed">
-              <strong>Current Situation:</strong> Your Shopify store is
-              operating with an excessive 217 product variants across your
-              fragrance line. This complexity is killing your profitability and
-              preventing growth. Our analysis of your February-May 2025 sales
-              data reveals critical issues requiring immediate action.
-            </p>
-          </div>
+          <HeaderSection
+            title="MUSKAT PRODUCT LINE OPTIMIZATION"
+            subtitle="Data-Driven Strategy | May 2025"
+            description="Your Shopify store is operating with an excessive 217 product variants across your fragrance line. This complexity is killing your profitability and preventing growth. Our analysis of your February-May 2025 sales data reveals critical issues requiring immediate action."
+          />
 
           {/* SECTION 1: CURRENT STATE ANALYSIS */}
           <div className="">
-            <h2 className="text-3xl font-bold mb-6 text-pink-400 border-b border-gray-700 pb-3">
-              CURRENT BUSINESS STATE
-            </h2>
+            <SectionHeader title="CURRENT BUSINESS STATE" />
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <div className="bg-gray-800 p-5 rounded-lg shadow">
-                <h3 className="text-2xl font-bold mb-4 text-gray-100">
-                  Revenue Breakdown by Scent
-                </h3>
-                <div className="h-72">
-                  <ResponsiveContainer width="100%" height="100%">
-                    <PieChart>
-                      <Pie
-                        data={scentData}
-                        cx="50%"
-                        cy="50%"
-                        labelLine={false}
-                        outerRadius={90}
-                        fill="#8884d8"
-                        dataKey="value"
-                        label={({ name, percentage }) =>
-                          `${name}: ${percentage}`
-                        }
-                      >
-                        {scentData.map((entry, index) => (
-                          <Cell
-                            key={`cell-${index}`}
-                            fill={COLORS[index % COLORS.length]}
-                          />
-                        ))}
-                      </Pie>
-                      <Tooltip formatter={(value) => `€${value.toFixed(2)}`} />
-                      <Legend
-                        layout="vertical"
-                        verticalAlign="middle"
-                        align="right"
-                      />
-                    </PieChart>
-                  </ResponsiveContainer>
-                </div>
-              </div>
+              <PieChartComponent
+                data={scentData}
+                colors={COLORS}
+                title="Revenue Breakdown by Scent"
+                tooltipFormatter={(value) => `€${value.toFixed(2)}`}
+              />
 
-              <div className="bg-gray-800 p-5 rounded-lg shadow">
-                <h3 className="text-2xl font-bold mb-4 text-gray-100">
-                  Revenue by Product Type
-                </h3>
-                <div className="h-72">
-                  <ResponsiveContainer width="100%" height="100%">
-                    <PieChart>
-                      <Pie
-                        data={productTypeData}
-                        cx="50%"
-                        cy="50%"
-                        labelLine={false}
-                        outerRadius={90}
-                        fill="#8884d8"
-                        dataKey="value"
-                        label={({ name, percentage }) =>
-                          `${name}: ${percentage}`
-                        }
-                      >
-                        {productTypeData.map((entry, index) => (
-                          <Cell
-                            key={`cell-${index}`}
-                            fill={PRODUCT_COLORS[index % PRODUCT_COLORS.length]}
-                          />
-                        ))}
-                      </Pie>
-                      <Tooltip formatter={(value) => `€${value.toFixed(2)}`} />
-                      <Legend
-                        layout="vertical"
-                        verticalAlign="middle"
-                        align="right"
-                      />
-                    </PieChart>
-                  </ResponsiveContainer>
-                </div>
-              </div>
+              <PieChartComponent
+                data={productTypeData}
+                colors={PRODUCT_COLORS}
+                title="Revenue by Product Type"
+                tooltipFormatter={(value) => `€${value.toFixed(2)}`}
+              />
             </div>
 
-            <div className="bg-gray-800 p-6 rounded-lg shadow">
-              <h3 className="text-2xl font-bold mb-4 text-gray-100">
-                Product Variant Analysis
-              </h3>
-              <div className="h-72">
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart
-                    layout="vertical"
-                    data={structureData}
-                    margin={{ top: 5, right: 30, left: 80, bottom: 5 }}
-                  >
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis type="number" />
-                    <YAxis type="category" dataKey="name" />
-                    <Tooltip formatter={(value) => `${value} variants`} />
-                    <Bar dataKey="variants" fill="#FF5630" barSize={30} />
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
-              <p className="mt-4 text-gray-400">
-                Your data shows 63.6% of variants (138 variants) generate only
-                20% of revenue. This means you're maintaining 138 separate
-                database entries, fragmenting your sales data.
-              </p>
-            </div>
+            <BarChartComponent
+              data={structureData}
+              title="Product Variant Analysis"
+              xAxisKey="name"
+              dataKeys={["variants"]}
+              colors={["#FF5630"]}
+              layout="vertical"
+              tooltipFormatter={(value) => `${value} variants`}
+              description="Your data shows 63.6% of variants (138 variants) generate only 20% of revenue. This means you're maintaining 138 separate database entries, fragmenting your sales data."
+            />
 
-            <div className="bg-gray-800 p-6 rounded-lg shadow mt-8">
-              <h3 className="text-2xl font-bold mb-4 text-gray-100">
-                Revenue Insights
-              </h3>
-              <ul className="list-disc pl-8 space-y-3 text-lg">
-                <li>
-                  <strong className="text-pink-400">75.6% of revenue</strong>{" "}
-                  comes from just two scents (Cotton Candy and White Musk)
-                </li>
-                <li>
-                  <strong className="text-pink-400">Bundle offerings</strong>{" "}
-                  account for 60.9% of total revenue (€33,369.41)
-                </li>
-                <li>
-                  <strong className="text-pink-400">Data Blindness:</strong>{" "}
-                  15.7% of revenue (€8,584.98) is trapped in an "Other/Mixed"
-                  category due to bundle tracking issues
-                </li>
-                <li>
-                  <strong className="text-pink-400">Missing Products:</strong>{" "}
-                  Despite Cotton Candy being your #1 seller (44.1%), you have no
-                  Cotton Candy deodorant or body mist products
-                </li>
-              </ul>
-            </div>
-          </div>
+            <RevenueInsights insights={revenueInsights} />
 
-          {/* SECTION 2: CRITICAL PROBLEMS */}
-          <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
-            <h2 className="text-3xl font-bold mb-6 text-pink-400 border-b border-gray-700 pb-3">
-              THREE CRITICAL PROBLEMS
-            </h2>
+            {/* <ProductAnalysis */}
+            {/*   productData={top10ProductData} */}
+            {/*   title="Top 10 Products Analysis" */}
+            {/* /> */}
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <div className="bg-gray-700 p-6 rounded-lg shadow">
-                <h3 className="text-2xl font-bold mb-3 text-gray-100">
-                  1. Technical Bloat in Your Shopify Store
-                </h3>
-                <p className="mb-4 text-lg">
-                  <strong>Think of it like:</strong> You're maintaining 217
-                  separate product variants when only 79 drive meaningful
-                  revenue.
-                </p>
-                <div className="mt-4 p-5 bg-gray-800 rounded shadow">
-                  <h4 className="font-bold text-xl mb-3 text-pink-400">
-                    Why This Matters:
-                  </h4>
-                  <ul className="list-disc pl-8 text-lg space-y-2">
-                    <li>
-                      Fragments your sales data across 217 database entries
-                    </li>
-                    <li>Complicates your inventory management</li>
-                    <li>Makes analytics nearly impossible</li>
-                  </ul>
-                </div>
-              </div>
+            <ProductSummary
+              title="Key Finding:"
+              keyFindings={productSummaryFindings}
+              businessImpact={businessImpact}
+            />
 
-              <div className="bg-gray-700 p-6 rounded-lg shadow">
-                <h3 className="text-2xl font-bold mb-3 text-gray-100">
-                  2. Missing Profitable Products
-                </h3>
-                <p className="mb-4 text-lg">
-                  <strong>Think of it like:</strong> Despite Cotton Candy being
-                  your #1 seller (44.1%), you have no Cotton Candy deodorant or
-                  body mist products.
-                </p>
-                <div className="mt-4 p-5 bg-gray-800 rounded shadow">
-                  <h4 className="font-bold text-xl mb-3 text-pink-400">
-                    Why This Matters:
-                  </h4>
-                  <ul className="list-disc pl-8 text-lg space-y-2">
-                    <li>You're losing obvious cross-selling opportunities</li>
-                    <li>
-                      Customers want matching products in their favorite scent
-                    </li>
-                    <li>
-                      You're leaving revenue on the table from your top seller
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="bg-gray-700 p-6 rounded-lg shadow">
-                <h3 className="text-2xl font-bold mb-3 text-gray-100">
-                  3. Decision Paralysis
-                </h3>
-                <p className="mb-4 text-lg">
-                  <strong>Think of it like:</strong> Your customers face a
-                  complicated purchasing process with too many options. Research
-                  shows excessive choice decreases purchase likelihood by 48%.
-                </p>
-                <div className="mt-4 p-5 bg-gray-800 rounded shadow">
-                  <h4 className="font-bold text-xl mb-3 text-pink-400">
-                    Why This Matters:
-                  </h4>
-                  <ul className="list-disc pl-8 text-lg space-y-2">
-                    <li>Overwhelmed customers often buy nothing</li>
-                    <li>Complex configurations drive cart abandonment</li>
-                    <li>
-                      Multiple redundant navigation paths confuse shoppers
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="bg-gray-700 p-6 rounded-lg shadow">
-                <h3 className="text-2xl font-bold mb-3 text-gray-100">
-                  4. Data Blindness
-                </h3>
-                <p className="mb-4 text-lg">
-                  <strong>Think of it like:</strong> 15.7% of your revenue
-                  (€8,584.98) is trapped in an "Other/Mixed" category because
-                  your variant system doesn't properly track which scents sell.
-                </p>
-                <div className="mt-4 p-5 bg-gray-800 rounded shadow">
-                  <h4 className="font-bold text-xl mb-3 text-pink-400">
-                    Why This Matters:
-                  </h4>
-                  <ul className="list-disc pl-8 text-lg space-y-2">
-                    <li>
-                      When a customer buys a mixed bundle, you don't know which
-                      scents they wanted
-                    </li>
-                    <li>
-                      It's like having a cash register button labeled "Misc
-                      Items" for 15.7% of your sales
-                    </li>
-                    <li>
-                      You can't make data-driven decisions with blind spots this
-                      large
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* SECTION 3: SOLUTION */}
-          <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
-            <h2 className="text-3xl font-bold mb-6 text-pink-400 border-b border-gray-700 pb-3">
-              TWO STRATEGIC APPROACHES
-            </h2>
-
-            <div className="bg-pink-900/20 p-6 rounded-lg shadow mb-8 border border-pink-800">
-              <h3 className="text-2xl font-bold mb-4 text-pink-400">
-                APPROACH 1: RADICAL SIMPLIFICATION WITH NEW PRODUCTS
-              </h3>
-              <p className="mb-4 text-lg">
-                This approach introduces new Cotton Candy products to complete
-                your lineup:
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
-                <div className="bg-pink-900 p-3 rounded text-center">
-                  <p className="font-bold">1. Cotton Candy Musk</p>
-                </div>
-                <div className="bg-blue-900 p-3 rounded text-center">
-                  <p className="font-bold">2. White Musk</p>
-                </div>
-                <div className="bg-pink-900 p-3 rounded text-center">
-                  <p className="font-bold text-yellow-300">
-                    3. NEW: Cotton Candy Deodorant
-                  </p>
-                </div>
-                <div className="bg-blue-900 p-3 rounded text-center">
-                  <p className="font-bold">4. White Musk Deodorant</p>
-                </div>
-                <div className="bg-pink-900 p-3 rounded text-center">
-                  <p className="font-bold text-yellow-300">
-                    5. NEW: Cotton Candy Body Mist
-                  </p>
-                </div>
-                <div className="bg-blue-900 p-3 rounded text-center">
-                  <p className="font-bold">6. White Musk Body Mist</p>
-                </div>
-                <div className="bg-pink-900 p-3 rounded text-center">
-                  <p className="font-bold">7. Cotton Candy Collection</p>
-                </div>
-                <div className="bg-blue-900 p-3 rounded text-center">
-                  <p className="font-bold">8. White Musk Collection</p>
-                </div>
-              </div>
-
-              <div className="bg-gray-800 p-4 rounded-lg">
-                <h4 className="text-xl font-bold mb-2 text-pink-400">
-                  Key Benefits:
-                </h4>
-                <ul className="list-disc pl-8 text-lg space-y-1">
-                  <li>Complete product families for both top-selling scents</li>
-                  <li>
-                    Maximizes cross-selling potential with matching products
-                  </li>
-                  <li>
-                    Addresses the missing products gap in your bestselling scent
-                  </li>
-                  <li>Higher potential revenue (+€33,150 vs +€25,500)</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-blue-900/20 p-6 rounded-lg shadow mb-8 border border-blue-800">
-              <h3 className="text-2xl font-bold mb-4 text-blue-400">
-                APPROACH 2: OPTIMIZATION WITH EXISTING PRODUCTS ONLY
-              </h3>
-              <p className="mb-4 text-lg">
-                This approach uses strategic bundles to maximize your current
-                inventory:
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
-                <div className="bg-pink-900 p-3 rounded text-center">
-                  <p className="font-bold">1. Cotton Candy Musk</p>
-                </div>
-                <div className="bg-blue-900 p-3 rounded text-center">
-                  <p className="font-bold">2. White Musk</p>
-                </div>
-                <div className="bg-blue-900 p-3 rounded text-center">
-                  <p className="font-bold">3. White Musk Deodorant</p>
-                </div>
-                <div className="bg-blue-900 p-3 rounded text-center">
-                  <p className="font-bold">4. White Musk Body Mist</p>
-                </div>
-                <div className="bg-gray-700 p-3 rounded text-center">
-                  <p className="font-bold">5. Bestsellers Duo</p>
-                  <p className="text-xs text-gray-300">
-                    (Cotton Candy + White Musk)
-                  </p>
-                </div>
-                <div className="bg-blue-900 p-3 rounded text-center">
-                  <p className="font-bold">6. White Musk Complete Collection</p>
-                  <p className="text-xs text-gray-300">
-                    (Musk + Deodorant + Body Mist)
-                  </p>
-                </div>
-                <div className="bg-gray-700 p-3 rounded text-center">
-                  <p className="font-bold">7. Mix & Match Trio</p>
-                  <p className="text-xs text-gray-300">
-                    (Any 3 products - customer choice)
-                  </p>
-                </div>
-                <div className="bg-gray-700 p-3 rounded text-center">
-                  <p className="font-bold">8. Ultimate Freshness Pack</p>
-                  <p className="text-xs text-gray-300">
-                    (2 Musks + 1 Deodorant + 1 Body Mist)
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-gray-800 p-4 rounded-lg">
-                <h4 className="text-xl font-bold mb-2 text-blue-400">
-                  Key Benefits:
-                </h4>
-                <ul className="list-disc pl-8 text-lg space-y-1">
-                  <li>
-                    Zero product development costs - uses only existing
-                    inventory
-                  </li>
-                  <li>Faster implementation timeline (weeks vs months)</li>
-                  <li>Lower risk approach with immediate implementation</li>
-                  <li>
-                    Still delivers significant profit improvement (+€40,250)
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-gray-700 p-6 rounded-lg shadow-lg mb-8">
-              <h3 className="text-2xl font-bold mb-4 text-gray-100">
-                RECOMMENDED APPROACH
-              </h3>
-              <p className="mb-4 text-lg">
-                We recommend a phased implementation:
-              </p>
-              <ol className="list-decimal pl-8 space-y-4 text-lg">
-                <li>
-                  <strong className="text-blue-400">
-                    Phase 1 (Immediate):
-                  </strong>{" "}
-                  Implement Approach 2 using existing products to streamline
-                  operations and improve profitability without delay
-                </li>
-                <li>
-                  <strong className="text-pink-400">
-                    Phase 2 (Months 4-6):
-                  </strong>{" "}
-                  Begin development of Cotton Candy Deodorant and Body Mist
-                  based on the performance data from your new bundle strategy
-                </li>
-              </ol>
-              <p className="mt-4 text-lg">
-                This gives you the best of both worlds: immediate improvement
-                with a clear path toward completing your product lineup.
-              </p>
-            </div>
-
-            <h4 className="font-bold text-xl mb-3 text-pink-400">
-              Simple Promotion Structure:
-            </h4>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
-              <div className="bg-gray-800 p-3 rounded text-center">
-                <p className="font-medium">Individual Products</p>
-                <p className="font-bold">Full Price</p>
-              </div>
-              <div className="bg-gray-800 p-3 rounded text-center">
-                <p className="font-medium">Any 2 Items</p>
-                <p className="font-bold text-green-400">15% OFF</p>
-              </div>
-              <div className="bg-gray-800 p-3 rounded text-center">
-                <p className="font-medium">Any 3 Items</p>
-                <p className="font-bold text-green-400">25% OFF</p>
-              </div>
-              <div className="bg-gray-800 p-3 rounded text-center">
-                <p className="font-medium">Collection Bundle</p>
-                <p className="font-bold text-green-400">33% OFF</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-            <div className="bg-gray-700 p-6 rounded-lg shadow">
-              <h3 className="text-2xl font-bold mb-4 text-gray-100">
-                1. Cut The Dead Weight
-              </h3>
-              <p className="mb-3 text-lg">
-                Cherry and Monoï make up only 8.7% of your sales while creating
-                massive complexity.
-              </p>
-              <div className="mt-4 p-5 bg-gray-800 rounded shadow">
-                <h4 className="font-bold text-xl mb-3 text-pink-400">
-                  Why This Works:
-                </h4>
-                <ul className="list-disc pl-8 text-lg space-y-2">
-                  <li>Eliminates 138 low-performing product variants</li>
-                  <li>
-                    Focuses inventory and marketing resources on what actually
-                    sells
-                  </li>
-                  <li>Reduces waste and increases profitability per SKU</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-gray-700 p-6 rounded-lg shadow">
-              <h3 className="text-2xl font-bold mb-4 text-gray-100">
-                2. Eliminate Data Blindness
-              </h3>
-              <p className="mb-3 text-lg">
-                Moving from 217 variants to 8 products gives you crystal-clear
-                visibility into what's driving revenue.
-              </p>
-              <div className="mt-4 p-5 bg-gray-800 rounded shadow">
-                <h4 className="font-bold text-xl mb-3 text-pink-400">
-                  Why This Works:
-                </h4>
-                <ul className="list-disc pl-8 text-lg space-y-2">
-                  <li>
-                    Recaptures the 15.7% "Other/Mixed" revenue data that's
-                    currently lost
-                  </li>
-                  <li>
-                    Makes data analysis and reporting dramatically simpler
-                  </li>
-                  <li>Enables true data-driven decision making</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-gray-700 p-6 rounded-lg shadow">
-              <h3 className="text-2xl font-bold mb-4 text-gray-100">
-                3. Address The Cotton Candy Gap
-              </h3>
-              <p className="mb-3 text-lg">
-                Your top scent (Cotton Candy at 44.1%) has no matching deodorant
-                or body mist, creating two possible approaches:
-              </p>
-              <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="p-4 bg-pink-900/20 rounded shadow border border-pink-800">
-                  <h4 className="font-bold text-lg mb-2 text-pink-400">
-                    Approach 1: New Products
-                  </h4>
-                  <ul className="list-disc pl-6 text-sm space-y-1">
-                    <li>Develop Cotton Candy deodorant and body mist</li>
-                    <li>Complete the product family</li>
-                    <li>Higher revenue potential</li>
-                    <li>Longer implementation time</li>
-                  </ul>
-                </div>
-                <div className="p-4 bg-blue-900/20 rounded shadow border border-blue-800">
-                  <h4 className="font-bold text-lg mb-2 text-blue-400">
-                    Approach 2: Strategic Bundles
-                  </h4>
-                  <ul className="list-disc pl-6 text-sm space-y-1">
-                    <li>Create bundles with existing products</li>
-                    <li>Test demand before product development</li>
-                    <li>Immediate implementation</li>
-                    <li>Lower initial investment</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-gray-700 p-6 rounded-lg shadow">
-              <h3 className="text-2xl font-bold mb-4 text-gray-100">
-                4. Simplifies Operations
-              </h3>
-              <p className="mb-3 text-lg">
-                Your current 217-variant structure creates a technical nightmare
-                for inventory, reporting, and management.
-              </p>
-              <div className="mt-4 p-5 bg-gray-800 rounded shadow">
-                <h4 className="font-bold text-xl mb-3 text-pink-400">
-                  Why This Works:
-                </h4>
-                <ul className="list-disc pl-8 text-lg space-y-2">
-                  <li>
-                    Makes inventory management and forecasting dramatically
-                    easier
-                  </li>
-                  <li>
-                    Simplifies your Shopify store structure and maintenance
-                  </li>
-                  <li>
-                    Reduces technical overhead and complexity across your entire
-                    business
-                  </li>
-                  <li>
-                    Improves customer shopping experience with fewer choices but
-                    better options
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-bold mb-6 text-pink-400 border-b border-gray-700 pb-3">
-            PROJECTED BUSINESS IMPACT
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center">
-              <div className="inline-flex items-center justify-center p-4 bg-pink-900 rounded-full mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-12 w-12 text-pink-300"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </div>
-              <div className="text-4xl font-bold mb-3 text-green-400">
-                +€25,500
-              </div>
-              <div className="text-xl">Additional Revenue</div>
-              <p className="text-gray-400 mt-2">Year 1 Projection</p>
-            </div>
-
-            <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center">
-              <div className="inline-flex items-center justify-center p-4 bg-blue-900 rounded-full mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-12 w-12 text-blue-300"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
-                  />
-                </svg>
-              </div>
-              <div className="text-4xl font-bold mb-3 text-blue-400">
-                -€14,750
-              </div>
-              <div className="text-xl">Cost Reduction</div>
-              <p className="text-gray-400 mt-2">Inventory & Operations</p>
-            </div>
-
-            <div className="bg-gray-700 p-6 rounded-lg shadow-lg text-center">
-              <div className="inline-flex items-center justify-center p-4 bg-green-900 rounded-full mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-12 w-12 text-green-300"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
-                  />
-                </svg>
-              </div>
-              <div className="text-4xl font-bold mb-3 text-pink-400">
-                +€40,250
-              </div>
-              <div className="text-xl">Total Profit Impact</div>
-              <p className="text-gray-400 mt-2">Year 1 Projection</p>
-            </div>
-          </div>
-
-          <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold mb-4 text-gray-100">
-              Financial Breakdown
-            </h3>
-            <div className="overflow-x-auto">
-              <table className="w-full text-left">
-                <thead>
-                  <tr className="border-b border-gray-600">
-                    <th className="p-3">METRIC</th>
-                    <th className="p-3">CURRENT</th>
-                    <th className="p-3">PROJECTED (YEAR 1)</th>
-                    <th className="p-3">IMPROVEMENT</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-gray-600">
-                    <td className="p-3">Annual Revenue</td>
-                    <td className="p-3">€220,000</td>
-                    <td className="p-3">€245,500</td>
-                    <td className="p-3 text-green-400">+€25,500</td>
-                  </tr>
-                  <tr className="border-b border-gray-600">
-                    <td className="p-3">Inventory Costs</td>
-                    <td className="p-3">€8,750</td>
-                    <td className="p-3">€3,000</td>
-                    <td className="p-3 text-green-400">-€5,750</td>
-                  </tr>
-                  <tr className="border-b border-gray-600">
-                    <td className="p-3">Operational Costs</td>
-                    <td className="p-3">€22,000</td>
-                    <td className="p-3">€13,000</td>
-                    <td className="p-3 text-green-400">-€9,000</td>
-                  </tr>
-                  <tr className="font-bold text-pink-400">
-                    <td className="p-3">TOTAL PROFIT IMPACT</td>
-                    <td className="p-3"></td>
-                    <td className="p-3"></td>
-                    <td className="p-3">+€40,250</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
-        {/* SECTION 5: IMPLEMENTATION */}
-        <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-bold mb-6 text-pink-400 border-b border-gray-700 pb-3">
-            PHASED IMPLEMENTATION ROADMAP
-          </h2>
-
-          <div className="mb-6 bg-blue-900/20 p-6 rounded-lg shadow-lg border border-blue-800">
-            <h3 className="text-2xl font-bold mb-4 text-blue-400">
-              Phase 1: Optimize with Existing Products
-            </h3>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-4">
-              <div className="bg-gray-700 p-6 rounded-lg shadow">
-                <h3 className="text-xl font-bold mb-3 text-gray-100">
-                  Month 1
-                </h3>
-                <ul className="list-disc pl-6 space-y-2 text-base">
-                  <li>
-                    Launch "Bestsellers Duo" bundle (Cotton Candy + White Musk)
-                  </li>
-                  <li>Begin phasing out Monoï products</li>
-                  <li>Consolidate White Musk product page</li>
-                  <li>Begin restructuring Shopify store</li>
-                </ul>
-              </div>
-
-              <div className="bg-gray-700 p-6 rounded-lg shadow">
-                <h3 className="text-xl font-bold mb-3 text-gray-100">
-                  Month 2
-                </h3>
-                <ul className="list-disc pl-6 space-y-2 text-base">
-                  <li>Launch "White Musk Complete Collection" bundle</li>
-                  <li>
-                    Replace all BOGO promotions with new discount structure
-                  </li>
-                  <li>Implement volume discount structure (15%/25%/33%)</li>
-                  <li>Begin phase-out of low-performing Cherry variants</li>
-                </ul>
-              </div>
-
-              <div className="bg-gray-700 p-6 rounded-lg shadow">
-                <h3 className="text-xl font-bold mb-3 text-gray-100">
-                  Month 3
-                </h3>
-                <ul className="list-disc pl-6 space-y-2 text-base">
-                  <li>Launch "Mix & Match Trio" bundle</li>
-                  <li>Launch "Ultimate Freshness Pack"</li>
-                  <li>
-                    Finalize Shopify store structure with 8 product lineup
-                  </li>
-                  <li>Analyze bundle performance data</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-pink-900/20 p-6 rounded-lg shadow-lg border border-pink-800">
-            <h3 className="text-2xl font-bold mb-4 text-pink-400">
-              Phase 2: Product Line Expansion (Optional)
-            </h3>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-4">
-              <div className="bg-gray-700 p-6 rounded-lg shadow">
-                <h3 className="text-xl font-bold mb-3 text-gray-100">
-                  Month 4
-                </h3>
-                <ul className="list-disc pl-6 space-y-2 text-base">
-                  <li>
-                    Based on Phase 1 data, begin development of Cotton Candy
-                    Deodorant
-                  </li>
-                  <li>
-                    Update promotional materials to prepare for new product
-                  </li>
-                  <li>Begin packaging and design work</li>
-                </ul>
-              </div>
-
-              <div className="bg-gray-700 p-6 rounded-lg shadow">
-                <h3 className="text-xl font-bold mb-3 text-gray-100">
-                  Month 5
-                </h3>
-                <ul className="list-disc pl-6 space-y-2 text-base">
-                  <li>Launch Cotton Candy Deodorant</li>
-                  <li>Begin development of Cotton Candy Body Mist</li>
-                  <li>Create "Complete Cotton Candy Collection" bundle</li>
-                </ul>
-              </div>
-
-              <div className="bg-gray-700 p-6 rounded-lg shadow">
-                <h3 className="text-xl font-bold mb-3 text-gray-100">
-                  Month 6
-                </h3>
-                <ul className="list-disc pl-6 space-y-2 text-base">
-                  <li>Launch Cotton Candy Body Mist</li>
-                  <li>Complete product line transition</li>
-                  <li>
-                    Begin planning for seasonal limited editions based on
-                    performance data
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-gray-800 p-4 rounded mt-4">
-              <p className="text-lg">
-                Phase 2 is <span className="font-bold">optional</span> and
-                should only be implemented if Phase 1 data confirms strong
-                demand for Cotton Candy complementary products.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* SECTION 6: NEXT STEPS */}
-        <div className="bg-gray-900 p-8 border-2 border-pink-800 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-bold text-center mb-6 text-pink-400 border-b border-pink-800 pb-3">
-            NEXT STEPS
-          </h2>
-
-          <p className="text-lg text-center mb-6">
-            Choose the approach that best fits your current business needs:
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-            <div className="bg-pink-900/20 p-6 rounded-lg shadow-lg border border-pink-800">
-              <h3 className="text-2xl font-bold mb-4 text-pink-400 text-center">
-                Approach 1
-              </h3>
-              <p className="text-lg mb-4 text-center">
-                Radical Simplification with New Products
-              </p>
-              <ul className="list-disc pl-8 space-y-3 text-lg">
-                <li>Highest potential reward (+€49,725)</li>
-                <li>Requires product development investment</li>
-                <li>Longer implementation timeline</li>
-                <li>Complete product family for top scents</li>
-              </ul>
-            </div>
-
-            <div className="bg-blue-900/20 p-6 rounded-lg shadow-lg border border-blue-800">
-              <h3 className="text-2xl font-bold mb-4 text-blue-400 text-center">
-                Approach 2
-              </h3>
-              <p className="text-lg mb-4 text-center">
-                Optimization with Existing Products
-              </p>
-              <ul className="list-disc pl-8 space-y-3 text-lg">
-                <li>Lower investment, faster implementation</li>
-                <li>Still delivers significant profit (+€40,250)</li>
-                <li>Uses only existing inventory</li>
-                <li>Provides data to guide future development</li>
-              </ul>
-            </div>
-          </div>
-
-          <p className="text-lg text-center mb-6 font-bold">
-            Our recommendation: Begin with Approach 2 and transition to Approach
-            1 as data confirms demand
-          </p>
-
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-            <ol className="space-y-6">
-              <li className="flex items-start">
-                <div className="flex-shrink-0 h-8 w-8 rounded-full bg-gray-700 flex items-center justify-center text-blue-400 font-bold mr-3">
-                  1
-                </div>
-                <div>
-                  <h4 className="font-medium text-xl text-gray-100">
-                    Approve the phased implementation approach
-                  </h4>
-                  <p className="text-gray-400 mt-2">
-                    Sign off on the two-phase strategy starting with existing
-                    product optimization.
-                  </p>
-                </div>
-              </li>
-
-              <li className="flex items-start">
-                <div className="flex-shrink-0 h-8 w-8 rounded-full bg-gray-700 flex items-center justify-center text-blue-400 font-bold mr-3">
-                  2
-                </div>
-                <div>
-                  <h4 className="font-medium text-xl text-gray-100">
-                    Authorize bundle creation and pricing structure
-                  </h4>
-                  <p className="text-gray-400 mt-2">
-                    Approve new bundle offerings and volume-based discount
-                    structure (15%/25%/33%).
-                  </p>
-                </div>
-              </li>
-
-              <li className="flex items-start">
-                <div className="flex-shrink-0 h-8 w-8 rounded-full bg-gray-700 flex items-center justify-center text-blue-400 font-bold mr-3">
-                  3
-                </div>
-                <div>
-                  <h4 className="font-medium text-xl text-gray-100">
-                    Begin phasing out low-performing variants
-                  </h4>
-                  <p className="text-gray-400 mt-2">
-                    Start removing the poorest performing 138 variants from your
-                    Shopify store.
-                  </p>
-                </div>
-              </li>
-
-              <li className="flex items-start">
-                <div className="flex-shrink-0 h-8 w-8 rounded-full bg-gray-700 flex items-center justify-center text-blue-400 font-bold mr-3">
-                  4
-                </div>
-                <div>
-                  <h4 className="font-medium text-xl text-gray-100">
-                    Set up data monitoring for Phase 1
-                  </h4>
-                  <p className="text-gray-400 mt-2">
-                    Create structured analytics to track cross-sell performance
-                    and measure demand for Cotton Candy complementary products.
-                  </p>
-                </div>
-              </li>
-            </ol>
-          </div>
-        </div>
-        {/* SECTION 7: DATA APPENDIX */}
-        <div className="bg-gray-800 p-8 rounded-lg shadow-lg mt-8">
-          <h2 className="text-3xl font-bold mb-6 text-pink-400 border-b border-gray-700 pb-3">
-            DATA APPENDIX
-          </h2>
-
-          <p className="mb-4 text-lg">
-            This section contains the raw data that supports our analysis and
-            recommendations. Use these tables to verify any metrics presented in
-            this proposal.
-          </p>
-
-          <div className="grid grid-cols-1 gap-8">
-            {/* Revenue By Scent - Raw Data */}
-            <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-100">
-                Revenue Breakdown by Scent
-              </h3>
-              <div className="overflow-x-auto">
-                <table className="w-full text-left">
-                  <thead>
-                    <tr className="border-b border-gray-600">
-                      <th className="p-3">SCENT</th>
-                      <th className="p-3">REVENUE</th>
-                      <th className="p-3">% OF TOTAL</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-gray-600">
-                      <td className="p-3">Cotton Candy</td>
-                      <td className="p-3">€24,164.79</td>
-                      <td className="p-3">44.1%</td>
-                    </tr>
-                    <tr className="border-b border-gray-600">
-                      <td className="p-3">White Musk</td>
-                      <td className="p-3">€17,274.46</td>
-                      <td className="p-3">31.5%</td>
-                    </tr>
-                    <tr className="border-b border-gray-600">
-                      <td className="p-3">Cherry</td>
-                      <td className="p-3">€3,275.38</td>
-                      <td className="p-3">6.0%</td>
-                    </tr>
-                    <tr className="border-b border-gray-600">
-                      <td className="p-3">Monoï</td>
-                      <td className="p-3">€1,489.66</td>
-                      <td className="p-3">2.7%</td>
-                    </tr>
-                    <tr className="border-b border-gray-600">
-                      <td className="p-3">Other/Mixed</td>
-                      <td className="p-3">€8,584.98</td>
-                      <td className="p-3">15.7%</td>
-                    </tr>
-                    <tr className="font-bold border-t-2 border-gray-500">
-                      <td className="p-3">TOTAL</td>
-                      <td className="p-3">€54,789.27</td>
-                      <td className="p-3">100%</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            {/* Revenue By Product Type - Raw Data */}
-            <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-100">
-                Revenue by Product Type
-              </h3>
-              <div className="overflow-x-auto">
-                <table className="w-full text-left">
-                  <thead>
-                    <tr className="border-b border-gray-600">
-                      <th className="p-3">PRODUCT TYPE</th>
-                      <th className="p-3">REVENUE</th>
-                      <th className="p-3">% OF TOTAL</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-gray-600">
-                      <td className="p-3">Bundles</td>
-                      <td className="p-3">€33,369.41</td>
-                      <td className="p-3">60.9%</td>
-                    </tr>
-                    <tr className="border-b border-gray-600">
-                      <td className="p-3">Musk/Standard</td>
-                      <td className="p-3">€19,578.05</td>
-                      <td className="p-3">35.7%</td>
-                    </tr>
-                    <tr className="border-b border-gray-600">
-                      <td className="p-3">Body Mist</td>
-                      <td className="p-3">€1,593.01</td>
-                      <td className="p-3">2.9%</td>
-                    </tr>
-                    <tr className="border-b border-gray-600">
-                      <td className="p-3">Deodorant</td>
-                      <td className="p-3">€544.87</td>
-                      <td className="p-3">1.0%</td>
-                    </tr>
-                    <tr className="font-bold border-t-2 border-gray-500">
-                      <td className="p-3">TOTAL</td>
-                      <td className="p-3">€54,789.27</td>
-                      <td className="p-3">100%</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            {/* Top 10 Products - Raw Data */}
-            <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-100">
-                Top 10 Products by Sales
-              </h3>
-              <div className="overflow-x-auto">
-                <table className="w-full text-left">
-                  <thead>
-                    <tr className="border-b border-gray-600">
-                      <th className="p-3">PRODUCT TITLE</th>
-                      <th className="p-3">NET ITEMS SOLD</th>
-                      <th className="p-3">NET SALES</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-gray-600">
-                      <td className="p-3">MUSK ÍNTIMO | MUSKAT©</td>
-                      <td className="p-3">3760</td>
-                      <td className="p-3">€96,737.30</td>
-                    </tr>
-                    <tr className="border-b border-gray-600">
-                      <td className="p-3">
-                        Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma
-                      </td>
-                      <td className="p-3">1629</td>
-                      <td className="p-3">€76,782.41</td>
-                    </tr>
-                    <tr className="border-b border-gray-600">
-                      <td className="p-3">
-                        2 musks comprados = 3 musks gratis
-                      </td>
-                      <td className="p-3">536</td>
-                      <td className="p-3">€24,943.43</td>
-                    </tr>
-                    <tr className="border-b border-gray-600">
-                      <td className="p-3">MUSK ÍNTIMO - ALMIZCLE BLANCO</td>
-                      <td className="p-3">803</td>
-                      <td className="p-3">€15,450.88</td>
-                    </tr>
-                    <tr className="border-b border-gray-600">
-                      <td className="p-3">
-                        1 desodorante comprado = 1 almizcle al 50% de descuento
-                      </td>
-                      <td className="p-3">423</td>
-                      <td className="p-3">€13,467.56</td>
-                    </tr>
-                    <tr className="border-b border-gray-600">
-                      <td className="p-3">
-                        Pack de rutina de frescura completa
-                      </td>
-                      <td className="p-3">306</td>
-                      <td className="p-3">€11,570.98</td>
-                    </tr>
-                    <tr className="border-b border-gray-600">
-                      <td className="p-3">
-                        1 bruma comprada = 1 musk al 50% de descuento
-                      </td>
-                      <td className="p-3">277</td>
-                      <td className="p-3">€10,071.83</td>
-                    </tr>
-                    <tr className="border-b border-gray-600">
-                      <td className="p-3">MUSK ÍNTIMO - CEREZA</td>
-                      <td className="p-3">443</td>
-                      <td className="p-3">€8,505.21</td>
-                    </tr>
-                    <tr className="border-b border-gray-600">
-                      <td className="p-3">MUSK ÍNTIMO - MONOÏ</td>
-                      <td className="p-3">358</td>
-                      <td className="p-3">€8,098.22</td>
-                    </tr>
-                    <tr className="border-b border-gray-600">
-                      <td className="p-3">
-                        Pack Ultimate: 3 musk + 2 desodorantes + 2 brumas
-                      </td>
-                      <td className="p-3">56</td>
-                      <td className="p-3">€4,732.90</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            {/* MUSK ÍNTIMO Product Analysis */}
-            <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-100">
-                MUSK ÍNTIMO | MUSKAT© Variant Analysis
-              </h3>
-              <p className="mb-4 text-gray-300">
-                This single product line has 34 variants due to the combination
-                of purchase options and scent selections. Each creates a
-                separate SKU in your system.
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <h4 className="text-xl font-bold mb-3 text-pink-400">
-                    Bundle Options (16 Variants)
-                  </h4>
-                  <div className="overflow-x-auto">
-                    <table className="w-full text-left">
-                      <thead>
-                        <tr className="border-b border-gray-600">
-                          <th className="p-3">PURCHASE OPTION</th>
-                          <th className="p-3">SALES</th>
-                          <th className="p-3">% OF TOTAL</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr className="border-b border-gray-600">
-                          <td className="p-3">1 Musk (Single product)</td>
-                          <td className="p-3">€38,227.09</td>
-                          <td className="p-3">39.5%</td>
-                        </tr>
-                        <tr className="border-b border-gray-600">
-                          <td className="p-3">
-                            1 comprado = el segundo al 50% de descuento
-                          </td>
-                          <td className="p-3">€16,894.45</td>
-                          <td className="p-3">17.5%</td>
-                        </tr>
-                        <tr className="border-b border-gray-600">
-                          <td className="p-3">2 comprados = 1 gratis</td>
-                          <td className="p-3">€23,886.26</td>
-                          <td className="p-3">24.7%</td>
-                        </tr>
-                        <tr className="border-b border-gray-600">
-                          <td className="p-3">Various other promotions</td>
-                          <td className="p-3">€17,729.50</td>
-                          <td className="p-3">18.3%</td>
-                        </tr>
-                        <tr className="font-bold border-t-2 border-gray-500">
-                          <td className="p-3">TOTAL</td>
-                          <td className="p-3">€96,737.30</td>
-                          <td className="p-3">100%</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-
-                <div>
-                  <h4 className="text-xl font-bold mb-3 text-pink-400">
-                    Scent Breakdown (18 Variants)
-                  </h4>
-                  <div className="overflow-x-auto">
-                    <table className="w-full text-left">
-                      <thead>
-                        <tr className="border-b border-gray-600">
-                          <th className="p-3">SCENT</th>
-                          <th className="p-3">SALES</th>
-                          <th className="p-3">% OF TOTAL</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr className="border-b border-gray-600">
-                          <td className="p-3">
-                            Cotton Candy (Algodón de azúcar)
-                          </td>
-                          <td className="p-3">€42,564.41</td>
-                          <td className="p-3">44.0%</td>
-                        </tr>
-                        <tr className="border-b border-gray-600">
-                          <td className="p-3">White Musk (Almizcle Blanco)</td>
-                          <td className="p-3">€30,469.25</td>
-                          <td className="p-3">31.5%</td>
-                        </tr>
-                        <tr className="border-b border-gray-600">
-                          <td className="p-3">Cherry (Cereza)</td>
-                          <td className="p-3">€5,804.24</td>
-                          <td className="p-3">6.0%</td>
-                        </tr>
-                        <tr className="border-b border-gray-600">
-                          <td className="p-3">Monoï</td>
-                          <td className="p-3">€2,612.91</td>
-                          <td className="p-3">2.7%</td>
-                        </tr>
-                        <tr className="border-b border-gray-600">
-                          <td className="p-3">Mixed/Multiple Scents</td>
-                          <td className="p-3">€15,286.49</td>
-                          <td className="p-3">15.8%</td>
-                        </tr>
-                        <tr className="font-bold border-t-2 border-gray-500">
-                          <td className="p-3">TOTAL</td>
-                          <td className="p-3">€96,737.30</td>
-                          <td className="p-3">100%</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-6 p-5 bg-gray-800 rounded shadow">
-                <h4 className="font-bold text-xl mb-3 text-pink-400">
-                  Key Variant Analysis Insights:
-                </h4>
-                <ul className="list-disc pl-8 text-lg space-y-2">
-                  <li>
-                    Each possible combination of bundle and scent creates a
-                    separate variant, resulting in 34 SKUs for what should be a
-                    simple product line
-                  </li>
-                  <li>
-                    The mixed/multiple scent bundles (15.8% of sales) create
-                    data tracking issues as you cannot attribute sales to
-                    specific scents
-                  </li>
-                  <li>
-                    Most of the 34 variants sell in small quantities, creating
-                    inventory complications
-                  </li>
-                  <li>
-                    The same two scents (Cotton Candy and White Musk) dominate
-                    sales across all bundle types
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Monthly Sales Trends - Raw Data */}
-            <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-100">
-                Monthly Sales by Top Scents (Feb-May 2025)
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <h4 className="text-xl font-bold mb-2 text-pink-400">
-                    Cotton Candy
-                  </h4>
-                  <div className="overflow-x-auto">
-                    <table className="w-full text-left">
-                      <thead>
-                        <tr className="border-b border-gray-600">
-                          <th className="p-3">MONTH</th>
-                          <th className="p-3">SALES</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr className="border-b border-gray-600">
-                          <td className="p-3">February 2025</td>
-                          <td className="p-3">€5,107.32</td>
-                        </tr>
-                        <tr className="border-b border-gray-600">
-                          <td className="p-3">March 2025</td>
-                          <td className="p-3">€6,347.48</td>
-                        </tr>
-                        <tr className="border-b border-gray-600">
-                          <td className="p-3">April 2025</td>
-                          <td className="p-3">€5,789.78</td>
-                        </tr>
-                        <tr className="border-b border-gray-600">
-                          <td className="p-3">May 2025</td>
-                          <td className="p-3">€1,983.00</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-
-                <div>
-                  <h4 className="text-xl font-bold mb-2 text-blue-400">
-                    White Musk
-                  </h4>
-                  <div className="overflow-x-auto">
-                    <table className="w-full text-left">
-                      <thead>
-                        <tr className="border-b border-gray-600">
-                          <th className="p-3">MONTH</th>
-                          <th className="p-3">SALES</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr className="border-b border-gray-600">
-                          <td className="p-3">February 2025</td>
-                          <td className="p-3">€5,876.71</td>
-                        </tr>
-                        <tr className="border-b border-gray-600">
-                          <td className="p-3">March 2025</td>
-                          <td className="p-3">€9,962.03</td>
-                        </tr>
-                        <tr className="border-b border-gray-600">
-                          <td className="p-3">April 2025</td>
-                          <td className="p-3">€9,454.27</td>
-                        </tr>
-                        <tr className="border-b border-gray-600">
-                          <td className="p-3">May 2025</td>
-                          <td className="p-3">€2,766.98</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Variant Analysis - Raw Data */}
-            <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-100">
-                Variant Performance Analysis
-              </h3>
-              <div className="overflow-x-auto">
-                <table className="w-full text-left">
-                  <thead>
-                    <tr className="border-b border-gray-600">
-                      <th className="p-3">PERFORMANCE CATEGORY</th>
-                      <th className="p-3">NUMBER OF VARIANTS</th>
-                      <th className="p-3">% OF TOTAL VARIANTS</th>
-                      <th className="p-3">% OF REVENUE</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-gray-600">
-                      <td className="p-3">Top Performers</td>
-                      <td className="p-3">79</td>
-                      <td className="p-3">36.4%</td>
-                      <td className="p-3">80.0%</td>
-                    </tr>
-                    <tr className="border-b border-gray-600">
-                      <td className="p-3">Low Performers</td>
-                      <td className="p-3">138</td>
-                      <td className="p-3">63.6%</td>
-                      <td className="p-3">20.0%</td>
-                    </tr>
-                    <tr className="font-bold border-t-2 border-gray-500">
-                      <td className="p-3">TOTAL</td>
-                      <td className="p-3">217</td>
-                      <td className="p-3">100%</td>
-                      <td className="p-3">100%</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <p className="mt-4 text-gray-300">
-                Note: This analysis confirms that 63.6% of your product variants
-                (138 variants) generate only 20% of your revenue, highlighting
-                the opportunity for streamlining your product lineup through
-                strategic bundles of your best-performing products.
-              </p>
-            </div>
+            <DiscountAnalysis
+              discountData={discountLossData}
+              title="Discount Loss Analysis"
+            />
 
             {/* Variant Complexity Analysis */}
-            <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
+            <div className="bg-gray-700 p-6 rounded-lg shadow-lg mt-8">
               <h3 className="text-2xl font-bold mb-4 text-gray-100">
                 Variant Complexity Breakdown
               </h3>
@@ -1592,10 +355,176 @@ const MuskatPresentation = () => {
               </div>
             </div>
           </div>
+
+          {/* SECTION 2: CRITICAL PROBLEMS */}
+          <CriticalProblems problems={criticalProblems} />
+
+          {/* SECTION 3: SOLUTION */}
+          <div className="">
+            <SectionHeader title="RECOMMENDED SOLUTION" />
+
+            {/* Strategic Approaches section */}
+            <StrategicApproaches
+              approaches={strategicApproaches}
+              recommendationText="We recommend a phased implementation:"
+            />
+
+            {/* Simple Promotion Structure */}
+            <div className="bg-gray-800 p-6 rounded-lg shadow mt-8">
+              <h4 className="font-bold text-xl mb-3 text-pink-400">
+                Simple Promotion Structure:
+              </h4>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+                <div className="bg-gray-700 p-3 rounded text-center">
+                  <p className="font-medium">Individual Products</p>
+                  <p className="font-bold">Full Price</p>
+                </div>
+                <div className="bg-gray-700 p-3 rounded text-center">
+                  <p className="font-medium">Any 2 Items</p>
+                  <p className="font-bold text-green-400">15% OFF</p>
+                </div>
+                <div className="bg-gray-700 p-3 rounded text-center">
+                  <p className="font-medium">Any 3 Items</p>
+                  <p className="font-bold text-green-400">25% OFF</p>
+                </div>
+                <div className="bg-gray-700 p-3 rounded text-center">
+                  <p className="font-medium">Collection Bundle</p>
+                  <p className="font-bold text-green-400">33% OFF</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* SECTION 4: RAW DATA */}
+          <div className="">
+            <SectionHeader title="RAW SALES DATA" />
+
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg mt-8 overflow-x-auto">
+              <h3 className="text-2xl font-bold mb-4 text-gray-100">
+                Total Sales by Product (May 2024 - May 2025)
+              </h3>
+              <table className="w-full text-left border-collapse">
+                <thead>
+                  <tr className="border-b border-gray-600">
+                    <th className="p-3">Product Title</th>
+                    <th className="p-3">Net Items Sold</th>
+                    <th className="p-3">Gross Sales (€)</th>
+                    <th className="p-3">Discounts (€)</th>
+                    <th className="p-3">Net Sales (€)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-gray-600">
+                    <td className="p-3">MUSK ÍNTIMO | MUSKAT©</td>
+                    <td className="p-3">3,760</td>
+                    <td className="p-3">105,114.65</td>
+                    <td className="p-3">-7,414.40</td>
+                    <td className="p-3">96,737.30</td>
+                  </tr>
+                  <tr className="border-b border-gray-600">
+                    <td className="p-3">Pack descubrimiento: 2 musks + 1 desodorante + 1 bruma</td>
+                    <td className="p-3">1,629</td>
+                    <td className="p-3">84,825.40</td>
+                    <td className="p-3">-7,260.54</td>
+                    <td className="p-3">76,782.41</td>
+                  </tr>
+                  <tr className="border-b border-gray-600">
+                    <td className="p-3">2 musks comprados = 3 musks gratis</td>
+                    <td className="p-3">536</td>
+                    <td className="p-3">26,836.20</td>
+                    <td className="p-3">-1,802.95</td>
+                    <td className="p-3">24,943.43</td>
+                  </tr>
+                  <tr className="border-b border-gray-600">
+                    <td className="p-3">MUSK ÍNTIMO - ALMIZCLE BLANCO</td>
+                    <td className="p-3">803</td>
+                    <td className="p-3">16,738.50</td>
+                    <td className="p-3">-1,047.26</td>
+                    <td className="p-3">15,450.88</td>
+                  </tr>
+                  <tr className="border-b border-gray-600">
+                    <td className="p-3">1 desodorante comprado = 1 almizcle al 50% de descuento</td>
+                    <td className="p-3">423</td>
+                    <td className="p-3">14,610.50</td>
+                    <td className="p-3">-1,113.04</td>
+                    <td className="p-3">13,467.56</td>
+                  </tr>
+                  <tr className="border-b border-gray-600">
+                    <td className="p-3">Pack de rutina de frescura completa : 1 musk + 1 bruma + 1 desodorante</td>
+                    <td className="p-3">306</td>
+                    <td className="p-3">12,289.20</td>
+                    <td className="p-3">-638.42</td>
+                    <td className="p-3">11,570.98</td>
+                  </tr>
+                  <tr className="border-b border-gray-600">
+                    <td className="p-3">1 bruma comprada = 1 musk al 50% de descuento</td>
+                    <td className="p-3">277</td>
+                    <td className="p-3">11,109.80</td>
+                    <td className="p-3">-887.71</td>
+                    <td className="p-3">10,071.83</td>
+                  </tr>
+                  <tr className="border-b border-gray-600">
+                    <td className="p-3">MUSK ÍNTIMO - CEREZA</td>
+                    <td className="p-3">443</td>
+                    <td className="p-3">9,125.50</td>
+                    <td className="p-3">-582.48</td>
+                    <td className="p-3">8,505.21</td>
+                  </tr>
+                  <tr className="border-b border-gray-600">
+                    <td className="p-3">MUSK ÍNTIMO - MONOÏ</td>
+                    <td className="p-3">358</td>
+                    <td className="p-3">8,853.70</td>
+                    <td className="p-3">-665.93</td>
+                    <td className="p-3">8,098.22</td>
+                  </tr>
+                  <tr className="border-b border-gray-600">
+                    <td className="p-3">Pack Ultimate: 3 musk + 2 desodorantes + 2 brumas</td>
+                    <td className="p-3">56</td>
+                    <td className="p-3">5,194.40</td>
+                    <td className="p-3">-461.50</td>
+                    <td className="p-3">4,732.90</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div className="mt-6">
+                <h4 className="text-xl font-bold mb-3 text-pink-400">
+                  Monthly Sales (February - May 2025)
+                </h4>
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr className="border-b border-gray-600">
+                      <th className="p-3">Month</th>
+                      <th className="p-3">Sales (€)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-gray-600">
+                      <td className="p-3">February 2025</td>
+                      <td className="p-3">11,057.20</td>
+                    </tr>
+                    <tr className="border-b border-gray-600">
+                      <td className="p-3">March 2025</td>
+                      <td className="p-3">15,338.00</td>
+                    </tr>
+                    <tr className="border-b border-gray-600">
+                      <td className="p-3">April 2025</td>
+                      <td className="p-3">14,744.50</td>
+                    </tr>
+                    <tr className="border-b border-gray-600">
+                      <td className="p-3">May 2025</td>
+                      <td className="p-3">4,629.40</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </TooltipProvider>
   );
 };
 
 export default MuskatPresentation;
+
