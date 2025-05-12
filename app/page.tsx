@@ -8,16 +8,9 @@ import {
   scentData,
   productTypeData,
   structureData,
-  financialData,
-  monthlySalesData,
-  solutionComponents,
   COLORS,
   PRODUCT_COLORS,
-  FINANCIAL_COLORS,
-  SOLUTION_COLORS,
-  revenueLossData,
   discountLossData,
-  top10ProductData,
 } from "./data/chartData";
 
 // Import components
@@ -26,7 +19,6 @@ import BarChartComponent from "./components/charts/BarChartComponent";
 import HeaderSection from "./components/sections/HeaderSection";
 import SectionHeader from "./components/sections/SectionHeader";
 import RevenueInsights from "./components/sections/RevenueInsights";
-import ProductAnalysis from "./components/sections/ProductAnalysis";
 import ProductSummary from "./components/sections/ProductSummary";
 import DiscountAnalysis from "./components/sections/DiscountAnalysis";
 import CriticalProblems from "./components/sections/CriticalProblems";
@@ -171,8 +163,8 @@ const MuskatPresentation = () => {
           {/* HEADER SECTION */}
           <HeaderSection
             title="MUSKAT PRODUCT LINE OPTIMIZATION"
-            subtitle="Data-Driven Strategy | May 2025"
-            description="Your Shopify store is operating with an excessive 217 product variants across your fragrance line. This complexity is killing your profitability and preventing growth. Our analysis of your February-May 2025 sales data reveals critical issues requiring immediate action."
+            subtitle="Data-Driven Strategy & Revenue Enhancement | May 2025"
+            description="Your Shopify store is currently operating with an excessive 217 product variants across your fragrance line. This technical complexity is killing your profitability and preventing sustainable growth. Our comprehensive analysis of your February-May 2025 sales data reveals critical issues requiring immediate action. This presentation outlines the problems and provides two strategic approaches to simplify your product lineup while significantly increasing revenue."
           />
 
           {/* SECTION 1: CURRENT STATE ANALYSIS */}

@@ -15,13 +15,13 @@ const HeaderSection: React.FC<HeaderSectionProps> = ({
 }) => {
   return (
     <div className="">
-      <h1 className="text-4xl font-bold text-center mb-4 text-pink-400">
+      <h1 className="text-5xl font-bold text-center mb-4 text-pink-400 tracking-tight">
         {title}
       </h1>
-      <p className="text-lg text-center mb-4 text-gray-300">{subtitle}</p>
+      <p className="text-xl text-center mb-4 text-gray-300">{subtitle}</p>
       <div className="border-t border-gray-700 my-6"></div>
-      <p className="text-lg mb-4 text-gray-300 leading-relaxed">
-        <strong>Current Situation:</strong> {description}
+      <p className="text-lg mb-6 text-gray-300 leading-relaxed mx-auto">
+        <strong className="text-pink-400">Current Situation:</strong> {description}
       </p>
     </div>
   );
