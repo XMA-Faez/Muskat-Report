@@ -238,7 +238,7 @@ const MuskatPresentation = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <h4 className="text-xl font-bold mb-3 text-pink-400">
-                    Variant Multiplication Effect
+                    Variant Combinatorial Effect
                   </h4>
                   <div className="overflow-x-auto">
                     <table className="w-full text-left">
@@ -246,7 +246,7 @@ const MuskatPresentation = () => {
                         <tr className="border-b border-gray-600">
                           <th className="p-3">PRODUCT LINE</th>
                           <th className="p-3">BASE PRODUCTS</th>
-                          <th className="p-3">BUNDLE OPTIONS</th>
+                          <th className="p-3">COMBINATION OPTIONS</th>
                           <th className="p-3">RESULTING VARIANTS</th>
                         </tr>
                       </thead>
@@ -254,25 +254,25 @@ const MuskatPresentation = () => {
                         <tr className="border-b border-gray-600">
                           <td className="p-3">MUSK ÍNTIMO</td>
                           <td className="p-3">4 scents</td>
-                          <td className="p-3">× 8.5 options</td>
+                          <td className="p-3">Singles (4) + Doubles (6) + Triples (4)</td>
                           <td className="p-3">= 34 variants</td>
                         </tr>
                         <tr className="border-b border-gray-600">
                           <td className="p-3">Bruma (Body Mist)</td>
                           <td className="p-3">6 scents</td>
-                          <td className="p-3">× 7 options</td>
+                          <td className="p-3">Singles (6) + Doubles (15) + Triples (20)</td>
                           <td className="p-3">= 42 variants</td>
                         </tr>
                         <tr className="border-b border-gray-600">
                           <td className="p-3">Discovery Packs</td>
                           <td className="p-3">4 base types</td>
-                          <td className="p-3">× 11 configurations</td>
+                          <td className="p-3">Multiple combinations across types</td>
                           <td className="p-3">= 44 variants</td>
                         </tr>
                         <tr className="border-b border-gray-600">
                           <td className="p-3">Other Bundle Types</td>
                           <td className="p-3">11 configurations</td>
-                          <td className="p-3">× 8.5 variations</td>
+                          <td className="p-3">Various combinations of products</td>
                           <td className="p-3">= 97 variants</td>
                         </tr>
                         <tr className="font-bold border-t-2 border-gray-500">
