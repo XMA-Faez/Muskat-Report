@@ -362,29 +362,29 @@ const MuskatPresentation = () => {
             />
 
             {/* Simple Promotion Structure */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow mt-8">
-              <h4 className="font-bold text-xl mb-3 text-pink-400">
-                Simple Promotion Structure:
-              </h4>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
-                <div className="bg-gray-700 p-3 rounded text-center">
-                  <p className="font-medium">Individual Products</p>
-                  <p className="font-bold">Full Price</p>
-                </div>
-                <div className="bg-gray-700 p-3 rounded text-center">
-                  <p className="font-medium">Any 2 Items</p>
-                  <p className="font-bold text-green-400">15% OFF</p>
-                </div>
-                <div className="bg-gray-700 p-3 rounded text-center">
-                  <p className="font-medium">Any 3 Items</p>
-                  <p className="font-bold text-green-400">25% OFF</p>
-                </div>
-                <div className="bg-gray-700 p-3 rounded text-center">
-                  <p className="font-medium">Collection Bundle</p>
-                  <p className="font-bold text-green-400">33% OFF</p>
-                </div>
-              </div>
-            </div>
+            {/* <div className="bg-gray-800 p-6 rounded-lg shadow mt-8"> */}
+            {/*   <h4 className="font-bold text-xl mb-3 text-pink-400"> */}
+            {/*     Simple Promotion Structure: */}
+            {/*   </h4> */}
+            {/*   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4"> */}
+            {/*     <div className="bg-gray-700 p-3 rounded text-center"> */}
+            {/*       <p className="font-medium">Individual Products</p> */}
+            {/*       <p className="font-bold">Full Price</p> */}
+            {/*     </div> */}
+            {/*     <div className="bg-gray-700 p-3 rounded text-center"> */}
+            {/*       <p className="font-medium">Any 2 Items</p> */}
+            {/*       <p className="font-bold text-green-400">15% OFF</p> */}
+            {/*     </div> */}
+            {/*     <div className="bg-gray-700 p-3 rounded text-center"> */}
+            {/*       <p className="font-medium">Any 3 Items</p> */}
+            {/*       <p className="font-bold text-green-400">25% OFF</p> */}
+            {/*     </div> */}
+            {/*     <div className="bg-gray-700 p-3 rounded text-center"> */}
+            {/*       <p className="font-medium">Collection Bundle</p> */}
+            {/*       <p className="font-bold text-green-400">33% OFF</p> */}
+            {/*     </div> */}
+            {/*   </div> */}
+            {/* </div> */}
           </div>
 
           {/* SECTION 4: RAW DATA */}
